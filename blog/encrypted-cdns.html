@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from telegram.org/blog/encrypted-cdns by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:13:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>More Speed and Security&#33;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="More Speed and Security&#33;">
+    <meta property="og:image" content="../file/811140886/164e/NRgod4GLJ74.739306/3d3e38ddcf093e95f9.png">
+    <meta property="og:site_name" content="Telegram">
+    <meta property="og:description" content="Higher download speed for popular public media from massive channels with distributed encrypted CDNs ">
+    <meta property="article:published_time" content="2017-07-23T15:34:00+00:00"><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="../file/811140886/164e/NRgod4GLJ74.739306/3d3e38ddcf093e95f9.png" />
+    <meta property="fb:app_id" content="254098051407226">
+    <meta property="vk:app_id" content="3782569">
+    <meta name="apple-itunes-app" content="app-id=686449807">
+    <meta name="telegram:channel" content="@telegram">
+    <link rel="canonical" href="encrypted-cdns.html" />
+    <link rel="shortcut icon" href="../faviconeccb.ico?3" type="image/x-icon" />
+<link rel="mask-icon" href="../img/website_icon.svg" color="#299ed8">
+    <link href="../css/bootstrap.mineccb.css?3" rel="stylesheet">
+    
+    <link href="../css/telegramcede.css?183" rel="stylesheet" media="screen">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <div class="tl_page_wrap">
+      <div class="tl_page_head navbar navbar-static-top navbar navbar-tg">
+        <div class="navbar-inner">
+          <div class="container clearfix">
+            <ul class="nav navbar-nav navbar-right"><li class="navbar-twitter"><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)"><i class="icon icon-twitter"></i><span class="hidden-xs"> Twitter</span></a></li></ul>
+<ul class="nav navbar-nav">
+  <li class=""><a href="../index.html">Home</a></li>
+  <li class=""><a href="../faq.html">FAQ</a></li>
+  <li class=""><a href="../apps.html">Apps</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/api">API</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/mtproto">Protocol</a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="container clearfix tl_page_container ">
+        <div class="tl_page">
+          <div class="tl_contest_page_wrap">
+	<div class="tl_blog_side_blog"><div class="side_blog_wrap">
+  <a href="../blog.html" class="side_blog_header">Recent News</a>
+  <div class="side_blog_entries">
+    <a href="coronavirus.html" class="side_blog_entry">
+  <div class="side_blog_date">Apr 3</div>
+  <div class="side_blog_title">Coronavirus News and Verified Channels</div>
+</a><a href="folders.html" class="side_blog_entry">
+  <div class="side_blog_date">Mar 30</div>
+  <div class="side_blog_title">Chat Folders, Archive, Channel Stats and More</div>
+</a><a href="new-profiles-people-nearby.html" class="side_blog_entry">
+  <div class="side_blog_date">Feb 13</div>
+  <div class="side_blog_title">New Profiles, Fast Media Viewer and People Nearby 2.0</div>
+</a><a href="polls-2-0-vmq.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 23</div>
+  <div class="side_blog_title">Polls 2.0: Visible Votes, Multiple Answers, and Quiz Mode</div>
+</a><a href="ton-gram-notice.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 6</div>
+  <div class="side_blog_title">A Public Notice About the TON Blockchain and Grams</div>
+</a><a href="verifiable-apps-and-more.html" class="side_blog_entry">
+  <div class="side_blog_date">Dec 31</div>
+  <div class="side_blog_title">Verifiable Builds, New Theme Editor, Send When Online and So Much More</div>
+</a><a href="scheduled-reminders-themes.html" class="side_blog_entry">
+  <div class="side_blog_date">Sep 5</div>
+  <div class="side_blog_title">Scheduled Messages, Reminders, Custom Cloud Themes and More Privacy</div>
+</a>
+  </div>
+</div></div>
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto">More Speed and Security&#33;</h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+ <img src="../file/811140669/160d/g_PcT-M-m8A.24441.gif/bd548b27837cc8f195.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image"><a href="../file/811140886/164e/NRgod4GLJ74.739306/3d3e38ddcf093e95f9.png" target="_blank"><img src="../file/811140290/150b/IpxYa5K2_3E.127469/11d888bbf92b4b42d8.jpg" title="Encrypted CDNs for Speed and Security"/></a>
+</div>
+
+<p>We at Telegram love to build sophisticated technologies that combine speed with security. Starting with Telegram <strong>4.2</strong>, we support <a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN caching</a>. CDNs are third-party caching nodes that we’ll use to cache publicly available videos and photos posted in massive channels (say, with <strong>100,000+</strong> subscribers) for users in remote locations where Telegram is popular.</p>
+<p>This will increase download speeds for tens of millions of users as CDN caching allows data to travel shorter distances and helps avoid bottlenecks that exist between regions. </p>
+<p>While these caching nodes are only used to temporarily store <strong>public</strong> media (imagine Telegram versions of superpopular YouTube hits), all data that goes through them is <strong>encrypted</strong> with a key unknown to the caching nodes. In other words, we treat these CDN caching nodes just like we treat your internet provider – they only ever get encrypted junk they can&#39;t decipher.</p>
+<h4><a class="anchor" name="heres-how-it-works" href="#heres-how-it-works"><i class="anchor-icon"></i></a>Here’s how it works</h4>
+<div class="blog_wide_image">
+  <a href="../file/811140934/1815/aSQ-nSUHJzc.45662/40c2955965574cef80.jpg" target="_blank"><img src="../file/811140934/1815/aSQ-nSUHJzc.45662/40c2955965574cef80.jpg" title="Content Delivery Network" /></a>
+</div>
+
+<p>If you&#39;re interested in the technical details, feel free to check out <a href="https://core.telegram.org/cdn">this page</a> that describes the relevant encryption and security checks. And as always – the updated source code for the Telegram apps is open and available for your scrutiny. Security experts are welcome to verify the implementation of CDNs based on the <a href="../apps.html#source-code">open source code</a> we make available for all of our apps.</p>
+<p>Thanks to this technology, the download speed for public photos and videos in places like South America, Turkey, Indonesia, India, Iran or Iraq will significantly increase without the slightest compromise in security. </p>
+<h4><a class="anchor" name="to-sum-up" href="#to-sum-up"><i class="anchor-icon"></i></a>To sum up</h4>
+<ul>
+<li>Download speeds for popular public media are set to increase several times for millions of Telegram users.</li>
+<li>CDN caching nodes are not Telegram servers and not part of the Telegram cloud.</li>
+<li>CDNs are used only for caching popular public media from massive channels. Private data never goes there.</li>
+<li>CDNs only get encrypted data and they never have the keys: even if they are accessed by hackers or third parties, the attacker won’t be able to decipher the files.</li>
+<li>Data downloaded from CDN caching nodes is always verified by the receiving Telegram app by way of hash: attackers won’t be able to replace any files with their own versions.</li>
+<li>Detailed technical info about CDNs can be found <a href="https://core.telegram.org/cdn">here</a>, the updated source code of Telegram apps ready for CDN support can be found <a href="../apps.html#source-code">here</a>.</li>
+<li>Telegram 4.2 also includes <a href="now-you-see-me.html">a bucketful of other goodies</a> for you to enjoy.</li>
+</ul>
+<div><br></div>
+
+<p>Stay safe (and fast)!</p>
+<p><em>July 23, 2017<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fencrypted-cdns&amp;text=Higher%20download%20speed%20for%20popular%20public%20media%20from%20massive%20channels%20with%20distributed%20encrypted%20CDNs%20" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Higher download speed for popular public media from massive channels with distributed encrypted CDNs " data-url="encrypted-cdns.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Higher download speed for popular public media from massive channels with distributed encrypted CDNs " data-url="https://telegram.org/blog/encrypted-cdns" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+  
+  <div class="tl_blog_bottom_blog"><div class="side_blog_wrap">
+  <a href="../blog.html" class="side_blog_header">Recent News</a>
+  <div class="side_blog_entries">
+    <a href="coronavirus.html" class="side_blog_entry">
+  <div class="side_blog_date">Apr 3</div>
+  <div class="side_blog_title">Coronavirus News and Verified Channels</div>
+</a><a href="folders.html" class="side_blog_entry">
+  <div class="side_blog_date">Mar 30</div>
+  <div class="side_blog_title">Chat Folders, Archive, Channel Stats and More</div>
+</a><a href="new-profiles-people-nearby.html" class="side_blog_entry">
+  <div class="side_blog_date">Feb 13</div>
+  <div class="side_blog_title">New Profiles, Fast Media Viewer and People Nearby 2.0</div>
+</a><a href="polls-2-0-vmq.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 23</div>
+  <div class="side_blog_title">Polls 2.0: Visible Votes, Multiple Answers, and Quiz Mode</div>
+</a><a href="ton-gram-notice.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 6</div>
+  <div class="side_blog_title">A Public Notice About the TON Blockchain and Grams</div>
+</a><a href="verifiable-apps-and-more.html" class="side_blog_entry">
+  <div class="side_blog_date">Dec 31</div>
+  <div class="side_blog_title">Verifiable Builds, New Theme Editor, Send When Online and So Much More</div>
+</a><a href="scheduled-reminders-themes.html" class="side_blog_entry">
+  <div class="side_blog_date">Sep 5</div>
+  <div class="side_blog_title">Scheduled Messages, Reminders, Custom Cloud Themes and More Privacy</div>
+</a>
+  </div>
+</div></div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer_wrap">
+  <div class="footer_columns_wrap clearfix footer_desktop">
+    <div class="footer_column footer_column_telegram">
+      <h5>Telegram</h5>
+      <div class="footer_telegram_description"></div>
+      Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+    </div>
+
+    <div class="footer_column">
+      <h5><a href="../faq.html">About</a></h5>
+      <ul>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../jobs.html">Jobs</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html#mobile-apps">Mobile Apps</a></h5>
+      <ul>
+        <li><a href="https://itunes.apple.com/app/telegram-messenger/id686449807">iPhone/iPad</a></li>
+        <li><a href="../dl/android.html">Android</a></li>
+        <li><a href="https://www.microsoft.com/store/apps/9WZDNCRDZHS0">Windows Phone</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html#desktop-apps">Desktop Apps</a></h5>
+      <ul>
+        <li><a href="http://desktop.telegram.org/">PC/Mac/Linux</a></li>
+        <li><a href="http://macos.telegram.org/">macOS</a></li>
+        <li><a href="https://web.telegram.org/">Web-browser</a></li>
+      </ul>
+    </div>
+    <div class="footer_column footer_column_platform">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+      <ul>
+        <li><a href="http://core.telegram.org/api">API</a></li>
+        <li><a href="http://translations.telegram.org/">Translations</a></li>
+        <li><a href="http://instantview.telegram.org/">Instant View</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_columns_wrap clearfix footer_mobile">
+    <div class="footer_column">
+      <h5><a href="../faq.html">About</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../blog.html">Blog</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html">Apps</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)">Twitter</a></h5>
+    </div>
+  </div>
+</div>
+    <script src="../js/main02e7.js?27"></script>
+    
+    
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45099287-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');initScrollVideos(true);
+twitterCustomShareInit();
+blogSideImageInit();
+backToTopInit();
+</script>
+  </body>
+
+<!-- Mirrored from telegram.org/blog/encrypted-cdns by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:13:50 GMT -->
+</html>
+<!-- page generated in 15.79ms -->

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from telegram.org/blog/bot-revolution by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:14:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Telegram Bot Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Telegram Bot Platform">
+    <meta property="og:image" content="../file/811140058/2/7GzMJk4Ij54/a1649c56fa9f805828.gif">
+    <meta property="og:site_name" content="Telegram">
+    <meta property="og:description" content="Telegram 3.0 introduces Bot Platform — free, open and super easy to use ">
+    <meta property="article:published_time" content="2015-06-24T18:11:36+00:00"><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="../file/811140058/2/7GzMJk4Ij54/a1649c56fa9f805828.gif" />
+    <meta property="fb:app_id" content="254098051407226">
+    <meta property="vk:app_id" content="3782569">
+    <meta name="apple-itunes-app" content="app-id=686449807">
+    <meta name="telegram:channel" content="@telegram">
+    <link rel="canonical" href="bot-revolution.html" />
+    <link rel="shortcut icon" href="../faviconeccb.ico?3" type="image/x-icon" />
+<link rel="mask-icon" href="../img/website_icon.svg" color="#299ed8">
+    <link href="../css/bootstrap.mineccb.css?3" rel="stylesheet">
+    
+    <link href="../css/telegramcede.css?183" rel="stylesheet" media="screen">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <div class="tl_page_wrap">
+      <div class="tl_page_head navbar navbar-static-top navbar navbar-tg">
+        <div class="navbar-inner">
+          <div class="container clearfix">
+            <ul class="nav navbar-nav navbar-right"><li class="navbar-twitter"><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)"><i class="icon icon-twitter"></i><span class="hidden-xs"> Twitter</span></a></li></ul>
+<ul class="nav navbar-nav">
+  <li class=""><a href="../index.html">Home</a></li>
+  <li class=""><a href="../faq.html">FAQ</a></li>
+  <li class=""><a href="../apps.html">Apps</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/api">API</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/mtproto">Protocol</a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="container clearfix tl_page_container ">
+        <div class="tl_page">
+          <div class="tl_contest_page_wrap">
+	<div class="tl_blog_side_blog"><div class="side_blog_wrap">
+  <a href="../blog.html" class="side_blog_header">Recent News</a>
+  <div class="side_blog_entries">
+    <a href="coronavirus.html" class="side_blog_entry">
+  <div class="side_blog_date">Apr 3</div>
+  <div class="side_blog_title">Coronavirus News and Verified Channels</div>
+</a><a href="folders.html" class="side_blog_entry">
+  <div class="side_blog_date">Mar 30</div>
+  <div class="side_blog_title">Chat Folders, Archive, Channel Stats and More</div>
+</a><a href="new-profiles-people-nearby.html" class="side_blog_entry">
+  <div class="side_blog_date">Feb 13</div>
+  <div class="side_blog_title">New Profiles, Fast Media Viewer and People Nearby 2.0</div>
+</a><a href="polls-2-0-vmq.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 23</div>
+  <div class="side_blog_title">Polls 2.0: Visible Votes, Multiple Answers, and Quiz Mode</div>
+</a><a href="ton-gram-notice.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 6</div>
+  <div class="side_blog_title">A Public Notice About the TON Blockchain and Grams</div>
+</a><a href="verifiable-apps-and-more.html" class="side_blog_entry">
+  <div class="side_blog_date">Dec 31</div>
+  <div class="side_blog_title">Verifiable Builds, New Theme Editor, Send When Online and So Much More</div>
+</a><a href="scheduled-reminders-themes.html" class="side_blog_entry">
+  <div class="side_blog_date">Sep 5</div>
+  <div class="side_blog_title">Scheduled Messages, Reminders, Custom Cloud Themes and More Privacy</div>
+</a>
+  </div>
+</div></div>
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto">Telegram Bot Platform</h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+ <img src="../file/811140058/2/7GzMJk4Ij54/a1649c56fa9f805828.gif" class="blog_side_image"/>
+</div>
+
+<blockquote>
+<p><strong>UPD:</strong> Check out the new <a href="inline-bots.html">Inline bots</a> as well!</p>
+</blockquote>
+<p>Telegram is about freedom and openness – our code is open for everyone, as is our API. Today we’re making another step towards openness by launching a <a href="https://core.telegram.org/bots/api">Bot API and platform</a> for third-party developers to <a href="https://core.telegram.org/bots">create bots</a>. </p>
+<p><strong>Bots</strong> are simply Telegram accounts operated by software – not people – and they&#39;ll often have AI features. They can do anything – teach, play, search, broadcast, remind, connect, integrate with other services, or even pass commands to the Internet of Things.</p>
+<center><div>
+
+    <a href="../file/811140930/1/-2j5fB6r0MA/e02975e21b1977a7db.jpg" target="_blank"><img src="../file/811140930/1/-2j5fB6r0MA/e02975e21b1977a7db.jpg" title="An image bot integrated with the Bing Image search API" style="width: 245px; padding: 10px 5px" /></a>
+
+    <a href="../file/811140690/1/T81U_kqVHsY/e30a06056bb48fa053.jpg" target="_blank"><img src="../file/811140690/1/T81U_kqVHsY/e30a06056bb48fa053.jpg" title="An empty conversation with a Poll bot" style="width: 245px; padding: 10px 5px" /></a><br><br>
+
+</div></center>
+
+
+<p>Today’s <strong>3.0</strong> update to the <a href="../apps.html">Telegram apps</a> makes interacting with bots super-easy. In most cases you won’t even have to type anything, because bots will provide you with a set of custom buttons.</p>
+<blockquote>
+<p><a href="https://youtu.be/vN4U5FqrOdQ?t=356"><strong>&quot;Every application needs a slightly optimized set of buttons, just for it.</strong>”</a><br>Steve Jobs, 2007 iPhone launch</p>
+</blockquote>
+<p>Bots can now provide you with custom keyboards for specialized tasks that could look like this for example:</p>
+<center><div>
+    <a href="../file/811140470/1/V7A84eVKQzs/8d2ede71e1c118ec69.jpg" target="_blank"><img src="../file/811140470/1/V7A84eVKQzs/8d2ede71e1c118ec69.jpg" title="'Hot or Bot?' with a custom keyboard." style="width: 245px; padding: 10px 5px" /></a>
+
+    <a href="../file/811140849/2/hBPe2YGBahk/3a45817b7e70d3e5f1.jpg" target="_blank"><img src="../file/811140849/2/hBPe2YGBahk/3a45817b7e70d3e5f1.jpg" title="A sticker rating bot with a custom keyboard." style="width: 245px; padding: 10px 5px" /></a>
+</div></center>
+
+<div><br></div>
+
+<p>Here are some sample bots that were built by the platform&#39;s beta testers this past weekend:</p>
+<ul>
+<li><a href="https://telegram.me/imagebot"><strong>@ImageBot</strong></a> – send this bot a keyword and it’ll provide you with a relevant picture.</li>
+<li><a href="https://telegram.me/triviabot"><strong>@TriviaBot</strong></a> – test your trivia knowledge or add to groups to compete with friends.</li>
+<li><a href="https://telegram.me/pollbot"><strong>@PollBot</strong></a> – add this one to group chats to create polls.</li>
+<li><a href="https://telegram.me/ratestickerbot"><strong>@RateStickerBot</strong></a> – discover and rate new stickers.</li>
+<li><a href="https://telegram.me/alertbot"><strong>@AlertBot</strong></a> – set a time and this bot will send you a reminder for anything you like.</li>
+<li><a href="https://telegram.me/hotorbot"><strong>@HotOrBot</strong></a> – find friends with this Tinder-like dating bot.</li>
+<li><a href="https://telegram.me/githubbot"><strong>@GithubBot</strong></a> – track GitHub updates.</li>
+<li><a href="https://telegram.me/storebot"><strong>@StoreBot</strong></a> – find new bots and rate them.</li>
+</ul>
+<div>
+    <a href="../file/811140327/1/zlN4goPTupk/9ff2f2f01c4bd1b013.png" target="_blank"><img src="../file/811140934/1/tbDSLHSaijc/fdcc7b6d5fb3354adf.jpg" title="The Botfather. Click for hi-res picture"  style="max-width: 200px;float:right" /></a>
+</div>
+
+<p>Our beta testers needed only a few hours to build these bots – setting up a new bot is a breeze. Just generate a key with <a href="https://telegram.me/botfather"><strong>@BotFather</strong></a> and use a simple <a href="https://core.telegram.org/bots/api">https API</a> to control your bot. If you’re an engineer, check out our <a href="https://core.telegram.org/bots"><strong>Introduction to bots</strong></a> for details.</p>
+<p>Bots in Telegram will look different from human users: their chat and profile screens have a slightly different UI and  they don&#39;t have access to <a href="https://core.telegram.org/bots#privacy-mode">all messages</a> by default when added to groups.</p>
+<h4><a class="anchor" name="taking-over-the-world" href="#taking-over-the-world"><i class="anchor-icon"></i></a>Taking over the world</h4>
+<p>Once you&#39;ve launched your bot, watch it spread. In Telegram, any forwarded message contains a link to its original sender. This means any message from your bot forwarded to a person or group is a messaging equivalent of a retweet – bots are viral.</p>
+<p>Additionally, all bots have an <strong>Add To Group</strong> and a <strong>Share</strong> button in their profile. You can set up a description and link that will be used when people share your bot on Telegram or other platforms. </p>
+<center><div>
+
+
+    <a href="../file/811140953/2/dHhrj9y1jtc/345e500fc7e1ffa5cd.jpg" target="_blank"><img src="../file/811140953/2/dHhrj9y1jtc/345e500fc7e1ffa5cd.jpg" title="Bot profile featuring the Add to Group, Share and Help buttons." style="width: 245px; padding: 10px 5px" /></a>
+
+    <a href="../file/811140572/1/vVg8aeC7SuM/161b45e3907efe6bde.jpg" target="_blank"><img src="../file/811140572/1/vVg8aeC7SuM/161b45e3907efe6bde.jpg" title="Telegram.me link and short info to easily share a bot." style="width: 245px; padding: 10px 5px" /></a>
+
+</div></center>
+
+<div><br></div>
+
+<p>A typical link to a bot looks like this:</p>
+<blockquote>
+<p><a href="https://telegram.me/your_bot">https://telegram.me/your_bot</a></p>
+</blockquote>
+<p>Opening such a link starts a chat with that bot if you have Telegram installed. These links are easy to identify because all bot usernames must end in <strong>bot</strong>.</p>
+<p>If the bot developer wants to pass their bot some additional info (like an auth key for example, see <a href="https://core.telegram.org/bots#deep-linking">deep linking</a>), the link might also look like this:</p>
+<blockquote>
+<p><a href="https://telegram.me/your_bot?start=value">https://telegram.me/your_bot?start=value</a></p>
+</blockquote>
+<h3><a class="anchor" name="the-bots-are-coming" href="#the-bots-are-coming"><i class="anchor-icon"></i></a>The bots are coming</h3>
+<p>Starting today, you&#39;ll see links like this in Telegram and elsewhere. Embrace them, they are bots! They will provide the services you asked us for – polls, news, games, integrations, e-butlers or cat images. Any dream can come true with bots.</p>
+<div><br></div>
+
+<p><em>The Telegram Team,<br>June 24, 2015</em></p>
+<div><br></div>
+
+<p><strong>P.S.</strong> All bot developers are welcome to share ideas for our Bot API on <a href="https://telegram.me/botsupport"><strong>@BotSupport</strong></a>.</p>
+<blockquote>
+<p>You can read more about the our bot platform in the <a href="https://core.telegram.org/bots"><strong>Introduction to Bots</strong></a> and in the <a href="https://core.telegram.org/bots/api"><strong>Bot API Manual</strong></a>.</p>
+</blockquote>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fbot-revolution&amp;text=Telegram%203.0%20introduces%20Bot%20Platform%20%E2%80%94%20free%2C%20open%20and%20super%20easy%20to%20use%20" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Telegram 3.0 introduces Bot Platform — free, open and super easy to use " data-url="bot-revolution.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Telegram 3.0 introduces Bot Platform — free, open and super easy to use " data-url="https://telegram.org/blog/bot-revolution" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+  
+  <div class="tl_blog_bottom_blog"><div class="side_blog_wrap">
+  <a href="../blog.html" class="side_blog_header">Recent News</a>
+  <div class="side_blog_entries">
+    <a href="coronavirus.html" class="side_blog_entry">
+  <div class="side_blog_date">Apr 3</div>
+  <div class="side_blog_title">Coronavirus News and Verified Channels</div>
+</a><a href="folders.html" class="side_blog_entry">
+  <div class="side_blog_date">Mar 30</div>
+  <div class="side_blog_title">Chat Folders, Archive, Channel Stats and More</div>
+</a><a href="new-profiles-people-nearby.html" class="side_blog_entry">
+  <div class="side_blog_date">Feb 13</div>
+  <div class="side_blog_title">New Profiles, Fast Media Viewer and People Nearby 2.0</div>
+</a><a href="polls-2-0-vmq.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 23</div>
+  <div class="side_blog_title">Polls 2.0: Visible Votes, Multiple Answers, and Quiz Mode</div>
+</a><a href="ton-gram-notice.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 6</div>
+  <div class="side_blog_title">A Public Notice About the TON Blockchain and Grams</div>
+</a><a href="verifiable-apps-and-more.html" class="side_blog_entry">
+  <div class="side_blog_date">Dec 31</div>
+  <div class="side_blog_title">Verifiable Builds, New Theme Editor, Send When Online and So Much More</div>
+</a><a href="scheduled-reminders-themes.html" class="side_blog_entry">
+  <div class="side_blog_date">Sep 5</div>
+  <div class="side_blog_title">Scheduled Messages, Reminders, Custom Cloud Themes and More Privacy</div>
+</a>
+  </div>
+</div></div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer_wrap">
+  <div class="footer_columns_wrap clearfix footer_desktop">
+    <div class="footer_column footer_column_telegram">
+      <h5>Telegram</h5>
+      <div class="footer_telegram_description"></div>
+      Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+    </div>
+
+    <div class="footer_column">
+      <h5><a href="../faq.html">About</a></h5>
+      <ul>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../jobs.html">Jobs</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html#mobile-apps">Mobile Apps</a></h5>
+      <ul>
+        <li><a href="https://itunes.apple.com/app/telegram-messenger/id686449807">iPhone/iPad</a></li>
+        <li><a href="../dl/android.html">Android</a></li>
+        <li><a href="https://www.microsoft.com/store/apps/9WZDNCRDZHS0">Windows Phone</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html#desktop-apps">Desktop Apps</a></h5>
+      <ul>
+        <li><a href="http://desktop.telegram.org/">PC/Mac/Linux</a></li>
+        <li><a href="http://macos.telegram.org/">macOS</a></li>
+        <li><a href="https://web.telegram.org/">Web-browser</a></li>
+      </ul>
+    </div>
+    <div class="footer_column footer_column_platform">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+      <ul>
+        <li><a href="http://core.telegram.org/api">API</a></li>
+        <li><a href="http://translations.telegram.org/">Translations</a></li>
+        <li><a href="http://instantview.telegram.org/">Instant View</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_columns_wrap clearfix footer_mobile">
+    <div class="footer_column">
+      <h5><a href="../faq.html">About</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../blog.html">Blog</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html">Apps</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)">Twitter</a></h5>
+    </div>
+  </div>
+</div>
+    <script src="../js/main02e7.js?27"></script>
+    
+    
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45099287-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');initScrollVideos(true);
+twitterCustomShareInit();
+blogSideImageInit();
+backToTopInit();
+</script>
+  </body>
+
+<!-- Mirrored from telegram.org/blog/bot-revolution by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:14:25 GMT -->
+</html>
+<!-- page generated in 13.97ms -->

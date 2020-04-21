@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from telegram.org/blog/unsend-and-usage by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:13:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Unsend Messages, Network Usage, and More</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Unsend Messages, Network Usage, and More">
+    <meta property="og:image" content="../file/811140341/1/zhMcdpMpEXs.118388/487f95a64006421bd1.jpg">
+    <meta property="og:site_name" content="Telegram">
+    <meta property="og:description" content="Removing your recently sent messages for all recipients, Network usage statistics, and a barrage of fresh Android features in Telegram v.3.16.">
+    <meta property="article:published_time" content="2017-01-03T16:45:11+00:00"><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="../file/811140341/1/zhMcdpMpEXs.118388/487f95a64006421bd1.jpg" />
+    <meta property="fb:app_id" content="254098051407226">
+    <meta property="vk:app_id" content="3782569">
+    <meta name="apple-itunes-app" content="app-id=686449807">
+    <meta name="telegram:channel" content="@telegram">
+    <link rel="canonical" href="unsend-and-usage.html" />
+    <link rel="shortcut icon" href="../faviconeccb.ico?3" type="image/x-icon" />
+<link rel="mask-icon" href="../img/website_icon.svg" color="#299ed8">
+    <link href="../css/bootstrap.mineccb.css?3" rel="stylesheet">
+    
+    <link href="../css/telegramcede.css?183" rel="stylesheet" media="screen">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <div class="tl_page_wrap">
+      <div class="tl_page_head navbar navbar-static-top navbar navbar-tg">
+        <div class="navbar-inner">
+          <div class="container clearfix">
+            <ul class="nav navbar-nav navbar-right"><li class="navbar-twitter"><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)"><i class="icon icon-twitter"></i><span class="hidden-xs"> Twitter</span></a></li></ul>
+<ul class="nav navbar-nav">
+  <li class=""><a href="../index.html">Home</a></li>
+  <li class=""><a href="../faq.html">FAQ</a></li>
+  <li class=""><a href="../apps.html">Apps</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/api">API</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/mtproto">Protocol</a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="container clearfix tl_page_container ">
+        <div class="tl_page">
+          <div class="tl_contest_page_wrap">
+	<div class="tl_blog_side_blog"><div class="side_blog_wrap">
+  <a href="../blog.html" class="side_blog_header">Recent News</a>
+  <div class="side_blog_entries">
+    <a href="coronavirus.html" class="side_blog_entry">
+  <div class="side_blog_date">Apr 3</div>
+  <div class="side_blog_title">Coronavirus News and Verified Channels</div>
+</a><a href="folders.html" class="side_blog_entry">
+  <div class="side_blog_date">Mar 30</div>
+  <div class="side_blog_title">Chat Folders, Archive, Channel Stats and More</div>
+</a><a href="new-profiles-people-nearby.html" class="side_blog_entry">
+  <div class="side_blog_date">Feb 13</div>
+  <div class="side_blog_title">New Profiles, Fast Media Viewer and People Nearby 2.0</div>
+</a><a href="polls-2-0-vmq.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 23</div>
+  <div class="side_blog_title">Polls 2.0: Visible Votes, Multiple Answers, and Quiz Mode</div>
+</a><a href="ton-gram-notice.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 6</div>
+  <div class="side_blog_title">A Public Notice About the TON Blockchain and Grams</div>
+</a><a href="verifiable-apps-and-more.html" class="side_blog_entry">
+  <div class="side_blog_date">Dec 31</div>
+  <div class="side_blog_title">Verifiable Builds, New Theme Editor, Send When Online and So Much More</div>
+</a><a href="scheduled-reminders-themes.html" class="side_blog_entry">
+  <div class="side_blog_date">Sep 5</div>
+  <div class="side_blog_title">Scheduled Messages, Reminders, Custom Cloud Themes and More Privacy</div>
+</a>
+  </div>
+</div></div>
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto">Unsend Messages, Network Usage, and More</h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="../img/tl_card_private.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="../file/811140341/1/zhMcdpMpEXs.118388/487f95a64006421bd1.jpg" target="_blank"><img src="../file/811140341/1/zhMcdpMpEXs.118388/487f95a64006421bd1.jpg" title="Telegram 3.16: Network usage"/></a>
+</div>
+
+
+<p>Happy new 2017! We hope everybody had a great celebration. We at Telegram certainly did. One of our engineers got so excited about the new year that he mistakenly shared these stickers with his Mom:</p>
+<div class="blog_image_wrap">
+  <a href="https://telegram.me/addstickers/VeryBadSantaClaus" target="_blank"><img src="../file/811140519/2/Qqs_1HVA6V4.210903/9998282a4a16bd7f9b.jpg" title="Not the best idea for sticker for anyone's mom" /></a>
+  <p>Ooops!</p>
+</div>
+
+<p>To fix this, he quickly added a way to unsend recently sent messages. This smart move saved his morning, and it can still save yours! If you use Telegram v.3.16, you can now unsend any weird messages you shared within the last 48 hours.</p>
+<div class="blog_image_wrap">
+  <a href="../file/811140497/1/BL1Yg4YUb3g.107360/73e2f80f96a2db763d.jpg" target="_blank"><img src="../file/811140497/1/BL1Yg4YUb3g.107360/73e2f80f96a2db763d.jpg" title="Delete messages for everyone" /></a>
+  <p>Works in groups and PM</p>
+</div>
+
+<p>Naturally, this isn‘t a one-time feature. After this update, you’ll be able to retract any messages within 48 hours of sending them. Take that, Friday nights!</p>
+<h3><a class="anchor" name="network-usage" href="#network-usage"><i class="anchor-icon"></i></a>Network usage</h3>
+<p>The holiday season is in high swing in many parts of the world, so we figured some of you folks are busy traveling. If that&#39;s the case, you may want to check out the new Network Usage section that shows exactly how much data you consumed while in roaming or wi-fi or whatever.</p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="../file/811140622/2/zmUNTTKGdIE.71298/09709e87e275222ac3.jpg" target="_blank"><img src="../file/811140622/2/zmUNTTKGdIE.71298/09709e87e275222ac3.jpg" title="New 'Data & Storage' section"/></a>
+    <p>Data and Storage</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="../file/811140351/1/ncMsma4oorI.72205/a3b5e8267344da74b3.jpg" target="_blank"><img src="../file/811140351/1/ncMsma4oorI.72205/a3b5e8267344da74b3.jpg" title="New 'Network Usage' section"/></a>
+    <p>Network Usage</p>  </div>
+</div>
+
+<p>Don&#39;t forget to hop on the hotel wifi before any serious Telegramming in foreign lands. And remember that you can toggle automatic media download in Telegram Settings.</p>
+<h3><a class="anchor" name="t-me-links" href="#t-me-links"><i class="anchor-icon"></i></a>T.me Links</h3>
+<p>This is the perfect season to meet new people. Want to give them some contact information, but a phone number seems like too much? That&#39;s exactly the reason we added <strong>usernames</strong> and Telegram.me links <a href="usernames-and-secret-chats-v2.html">waaay back</a> in 2014.</p>
+<p>Starting today, you can use <strong>t.me</strong> instead of telegram.me. Take a napkin, write <a href="https://t.me/username"><strong>t.me/username</strong></a> in no time, and give it to someone before they can get away!</p>
+<p>This also works with channels:<br><a href="https://t.me/telegram"><strong>t.me/telegram</strong></a><br>Public groups:<br><a href="https://t.me/snowballfight"><strong>t.me/snowballfight</strong></a><br>And stickers:<br><a href="https://t.me/addstickers/NickSantini"><strong>t.me/addstickers/NickSantini</strong></a></p>
+<h3><a class="anchor" name="android-developers-never-sleep" href="#android-developers-never-sleep"><i class="anchor-icon"></i></a>Android Developers Never Sleep</h3>
+<p>85% of Telegram users are on Android. Our CEO is worried that, if ignored, this Android population can start a rebellion and dethrone him. To please the mob, he made us introduce the following features to the Android app:</p>
+<ul>
+<li>Messages from one sender are now neatly grouped together, and scrolling up shows the date right away, making the chats easier to navigate.</li>
+<li>The app now restores your previous scroll position when you switch back to a chat. Very useful when somebody sends you a saga in 1,000 messages, and you want to patiently read them in the right order.</li>
+</ul>
+<div class="blog_image_wrap">
+  <a href="../file/811140352/1/wxzxTmvS07c.156395/122fd75657c85aef81.jpg" target="_blank"><img src="../file/811140352/1/wxzxTmvS07c.156395/122fd75657c85aef81.jpg" title="Floating date" /></a>
+  <p>That's the date up there</p>
+</div>
+
+<ul>
+<li>Sharing files (a feature we had <a href="shared-files.html">since forever</a>) has become easier because you see a list of recently downloaded files right on the sharing screen.</li>
+</ul>
+<div class="blog_image_wrap">
+  <a href="../file/811140524/1/2qLhKladvNY.86955/5420c9ddfe046db207.jpg" target="_blank"><img src="../file/811140524/1/2qLhKladvNY.86955/5420c9ddfe046db207.jpg" title="Recently downloaded files" /></a>
+  <p>Recently downloaded files</p>
+</div>
+
+<ul>
+<li>We now support GBoard, the Google keyboard that can apparently send cat GIFs.</li>
+<li>And for those 2 users that already have Android 7.1 installed, we are happy to announce that we&#39;ve added a fast action menu with frequent chats to your home screen. All hail the early adopters!</li>
+<li>Back to the important stuff: the cowboy, the clown, and the sick face emoji (also known as the ‘exfoliating green tea mask face’ emoji) have found their way to Android. We support all of them now. </li>
+</ul>
+<div class="blog_image_wrap">
+  <a href="../file/811140138/1/fRxQ-bJxmYQ.59803/93f5bb4482aa5520c8.jpg" target="_blank"><img src="../file/811140138/1/fRxQ-bJxmYQ.59803/93f5bb4482aa5520c8.jpg" title="The cowboy, the clown, the sickface" /></a>
+  <p>New emoji</p>
+</div>
+
+<p>What do these emoji mean? When are you supposed to use them? Is the singular form of ‘emoji’ in fact ‘emojus’? To answer all these questions with utmost accuracy, we&#39;ve also added support for this one: </p>
+<div class="blog_image_wrap">
+  <a href="../file/811140578/1/OhaZ6npihrM.12864/aceea75198f3d1f334.jpg" target="_blank"><img src="../file/811140578/1/OhaZ6npihrM.12864/aceea75198f3d1f334.jpg" title="¯\_(ツ)_/¯" /></a>
+</div>
+
+<div><br></div>
+
+<p><em>January 3, 2017<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Funsend-and-usage&amp;text=Take%20back%20recently%20sent%20messages%2C%20check%20network%20usage%20stats%2C%20and%20enjoy%20Android%20progress%20with%20v.3.16" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Take back recently sent messages, check network usage stats, and enjoy Android progress with v.3.16" data-url="unsend-and-usage.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Take back recently sent messages, check network usage stats, and enjoy Android progress with v.3.16" data-url="https://telegram.org/blog/unsend-and-usage" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+  
+  <div class="tl_blog_bottom_blog"><div class="side_blog_wrap">
+  <a href="../blog.html" class="side_blog_header">Recent News</a>
+  <div class="side_blog_entries">
+    <a href="coronavirus.html" class="side_blog_entry">
+  <div class="side_blog_date">Apr 3</div>
+  <div class="side_blog_title">Coronavirus News and Verified Channels</div>
+</a><a href="folders.html" class="side_blog_entry">
+  <div class="side_blog_date">Mar 30</div>
+  <div class="side_blog_title">Chat Folders, Archive, Channel Stats and More</div>
+</a><a href="new-profiles-people-nearby.html" class="side_blog_entry">
+  <div class="side_blog_date">Feb 13</div>
+  <div class="side_blog_title">New Profiles, Fast Media Viewer and People Nearby 2.0</div>
+</a><a href="polls-2-0-vmq.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 23</div>
+  <div class="side_blog_title">Polls 2.0: Visible Votes, Multiple Answers, and Quiz Mode</div>
+</a><a href="ton-gram-notice.html" class="side_blog_entry">
+  <div class="side_blog_date">Jan 6</div>
+  <div class="side_blog_title">A Public Notice About the TON Blockchain and Grams</div>
+</a><a href="verifiable-apps-and-more.html" class="side_blog_entry">
+  <div class="side_blog_date">Dec 31</div>
+  <div class="side_blog_title">Verifiable Builds, New Theme Editor, Send When Online and So Much More</div>
+</a><a href="scheduled-reminders-themes.html" class="side_blog_entry">
+  <div class="side_blog_date">Sep 5</div>
+  <div class="side_blog_title">Scheduled Messages, Reminders, Custom Cloud Themes and More Privacy</div>
+</a>
+  </div>
+</div></div>
+</div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer_wrap">
+  <div class="footer_columns_wrap clearfix footer_desktop">
+    <div class="footer_column footer_column_telegram">
+      <h5>Telegram</h5>
+      <div class="footer_telegram_description"></div>
+      Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+    </div>
+
+    <div class="footer_column">
+      <h5><a href="../faq.html">About</a></h5>
+      <ul>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../jobs.html">Jobs</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html#mobile-apps">Mobile Apps</a></h5>
+      <ul>
+        <li><a href="https://itunes.apple.com/app/telegram-messenger/id686449807">iPhone/iPad</a></li>
+        <li><a href="../dl/android.html">Android</a></li>
+        <li><a href="https://www.microsoft.com/store/apps/9WZDNCRDZHS0">Windows Phone</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html#desktop-apps">Desktop Apps</a></h5>
+      <ul>
+        <li><a href="http://desktop.telegram.org/">PC/Mac/Linux</a></li>
+        <li><a href="http://macos.telegram.org/">macOS</a></li>
+        <li><a href="https://web.telegram.org/">Web-browser</a></li>
+      </ul>
+    </div>
+    <div class="footer_column footer_column_platform">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+      <ul>
+        <li><a href="http://core.telegram.org/api">API</a></li>
+        <li><a href="http://translations.telegram.org/">Translations</a></li>
+        <li><a href="http://instantview.telegram.org/">Instant View</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_columns_wrap clearfix footer_mobile">
+    <div class="footer_column">
+      <h5><a href="../faq.html">About</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../blog.html">Blog</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="../apps.html">Apps</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)">Twitter</a></h5>
+    </div>
+  </div>
+</div>
+    <script src="../js/main02e7.js?27"></script>
+    
+    
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45099287-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');initScrollVideos(true);
+twitterCustomShareInit();
+blogSideImageInit();
+backToTopInit();
+</script>
+  </body>
+
+<!-- Mirrored from telegram.org/blog/unsend-and-usage by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:13:58 GMT -->
+</html>
+<!-- page generated in 15.25ms -->

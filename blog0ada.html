@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from telegram.org/blog?offset=40 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:15:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Telegram Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Telegram Blog">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Telegram">
+    <meta property="og:description" content="">
+    
+    <meta property="fb:app_id" content="254098051407226">
+    <meta property="vk:app_id" content="3782569">
+    <meta name="apple-itunes-app" content="app-id=686449807">
+    <meta name="telegram:channel" content="@telegram">
+    
+    <link rel="shortcut icon" href="faviconeccb.ico?3" type="image/x-icon" />
+<link rel="mask-icon" href="img/website_icon.svg" color="#299ed8">
+    <link href="css/bootstrap.mineccb.css?3" rel="stylesheet">
+    <link href="css/bootstrap-extrac81e.css?2" rel="stylesheet">
+    <link href="css/telegramcede.css?183" rel="stylesheet" media="screen">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <div class="tl_page_wrap">
+      <div class="tl_page_head navbar navbar-static-top navbar navbar-tg">
+        <div class="navbar-inner">
+          <div class="container clearfix">
+            <ul class="nav navbar-nav navbar-right"><li class="navbar-twitter"><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)"><i class="icon icon-twitter"></i><span class="hidden-xs"> Twitter</span></a></li></ul>
+<ul class="nav navbar-nav">
+  <li class=""><a href="index.html">Home</a></li>
+  <li class=""><a href="faq.html">FAQ</a></li>
+  <li class=""><a href="apps.html">Apps</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/api">API</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/mtproto">Protocol</a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="container clearfix tl_page_container ">
+        <div class="tl_page">
+          <div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/calls.html">Voice Calls: Secure, Crystal-Clear, AI-Powered</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140024/2/lPo1rDxjlkc.19519.gif/584fde66edba589e42.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140683/1/gck84E2uvJE.876923/62b2d7a3cb2a9b36c0.png" target="_blank"><img src="file/811140828/2/h5OI_7y7Vjs.186012/4a68dedb2b8f10c50c.jpg" title="Introducing Telegram Calls!"/></a>
+</div>
+
+<p>Over the past few months, we’ve worked hard to make sure Telegram calls are the best in terms of quality, speed, and security. The wait is over: today Voice Calls are available all over the world in our mobile and <a href="https://desktop.telegram.org/">desktop</a> apps.</p>
+<p>The Voice Call interface is familiar and easy to use, but as always, you get loads of innovation under the hood with Telegram.</p>
+<div class="blog_video_player_wrap" style="max-width: 640px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140611/1/r98N01VmU9Q.85127/7e4b275ad7254e604d.jpg" style="max-width: 640px;">
+  <source src="file/811140117/4/FGak4L3ns8Y.1257015.mp4/5110053354660494ac" type="video/mp4">
+ </video>
+</div>
+
+<h3><a class="anchor" name="secure" href="#secure"><i class="anchor-icon"></i></a>Secure</h3>
+<p>Telegram Calls are built upon the time-tested end-to-end encryption of Telegram&#39;s Secret Chats. The key verification UI we came up with in 2013 to protect against man-in-the-middle attacks served well for Telegram (and for other apps that adopted it), but for Calls we needed something easier.</p>
+<p>That‘s why we’ve <a href="https://core.telegram.org/techfaq#q-how-are-voice-calls-authenticated">improved the key exchange mechanism</a>. To make sure your call is 100% secure, you and your recipient just need to compare <strong>four emoji</strong> over the phone. No lengthy codes or complicated pictures!</p>
+<div class="blog_image_wrap">
+  <a href="file/811140066/3/RSbvw7bT3pQ.32736/e03a39c31f5656df61.jpg" target="_blank"><img src="file/811140066/3/RSbvw7bT3pQ.32736/e03a39c31f5656df61.jpg" title="Emoji verification" /></a>
+  <p>Key verification</p>
+</div>
+
+<h3><a class="anchor" name="super-fast" href="#super-fast"><i class="anchor-icon"></i></a>Super-Fast</h3>
+<p>Whenever possible, your calls will go over a peer-to-peer connection, using the best audio codecs to save traffic while providing crystal-clear quality. </p>
+<p>If a peer-to-peer connection can&#39;t be established, Telegram will use the closest server to you to connect you with the person you’re calling in the fastest way possible. Unlike other apps, Telegram has a distributed infrastructure all over the world which we’ve already been using to deliver your texts faster than other apps. Now these servers will also be used for calls. </p>
+<p>In the coming months, we’ll be expanding our content delivery network around the globe, getting the connection up to light-speed even in remote areas.</p>
+<h3><a class="anchor" name="ai-powered" href="#ai-powered"><i class="anchor-icon"></i></a>AI-Powered</h3>
+<p>Each time you make a Voice Call on Telegram, a neural network learns from your and your device‘s feedback (naturally, it doesn’t have access to the contents of the conversation, it has only technical information such as network speed, ping times, packet loss percentage, etc.). The machine optimizes dozens of parameters based on this input, improving the quality of future calls on the given device and network.</p>
+<p>These parameters can also be adjusted during a conversation if there&#39;s a change in your connection. Telegram will adapt and provide excellent sound quality on stable WiFi — or use less data when you walk into a refrigerator with bad reception.</p>
+<p>According to our tests, Telegram Calls are already superior to any of our competitors on comparable connections. But the quality of Telegram Calls will further improve as you and others use them, thanks to the built-in machine learning.</p>
+<h3><a class="anchor" name="complete-control" href="#complete-control"><i class="anchor-icon"></i></a>Complete Control</h3>
+<p>If you’re like us, you don’t like to be bothered. On Telegram, you can control who can and who can&#39;t call you with granular precision. You can even switch voice calls off altogether, blocking anyone and everyone from calling you.</p>
+  <div class="blog_image_wrap">
+    <a href="file/811140599/1/t4OzpC_5CD4.58064/4284f45dd783ad1739.jpg" target="_blank"><img src="file/811140599/1/t4OzpC_5CD4.58064/4284f45dd783ad1739.jpg" title="Privacy Settings for calls"/></a>
+    <p>Privacy settings for calls</p>  </div>
+
+<p>By default, Telegram calls are lightweight and automatically adapt to the speed and type of your connection, so as to consume the least data possible. But if you want to reduce your data spending by another 25-30% at the expense of sound quality, you’re welcome to enable the <strong>Use Less Data</strong> option in Data and Storage Settings.</p>
+<h3><a class="anchor" name="no-added-calories" href="#no-added-calories"><i class="anchor-icon"></i></a>No Added Calories</h3>
+<p>Telegram is the most powerful messaging platform out there, but it is also famous for being the easiest one to use. We want to keep things this way, and that’s why by default we won’t clutter your screen with additional tabs and redundant buttons.</p>
+<p>Once you start making calls, Telegram for iOS will offer you to add a dedicated tab for calls on the main screen of the app. Alternatively, you can turn the Calls tab on right away from the Recent Calls section in Settings. On Android, the call tab is accessible via the pull-out main menu on the left.</p>
+<p>It‘s always easy to make a call, even if you’ve never opened the calls tab. As soon as Voice Calls are enabled for your country, a phone icon will appear on every profile page. You can also call by tapping the top bar in a chat and choosing ‘Call’ on iOS. On Android, the Call button is in the ‘…’ menu at the top.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140114/4/lBHGStIoAYU.65887/1429453aac8cfbcf48.jpg" target="_blank"><img src="file/811140114/4/lBHGStIoAYU.65887/1429453aac8cfbcf48.jpg" title="Call button in profiles" /></a>
+  <p>New call button</p>
+</div>
+
+<h3><a class="anchor" name="one-more-thing" href="#one-more-thing"><i class="anchor-icon"></i></a>One more thing</h3>
+<p>For those of you who don’t do voice calls, v.3.18 brings something different: direct control over the <strong>quality of videos</strong> you share. Use this brand-new setting to select the degree of compression before sending a video. For the first time in the history of messaging, you can preview how the recipient will see your video before you send it.</p>
+<div class="smartphone_video_player_wrap">
+ <div class="smartphone_video_player_iphone">
+ <video class="smartphone_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)" poster="file/811140500/2/eneqCAS2gRw.35210/d571d200b301536b2d.jpg"  loop controls muted>
+  <source src="file/811140736/2/FxqQPyhZle4.629521.mp4/3e729213bf2595f936" type="video/mp4">
+ </video>
+ </div>
+</div>
+
+<p>The app will remember the compression rate you selected and will use it by default for your future video uploads.</p>
+<div><br></div>
+
+<p>And that‘s it for today. Stay tuned, there’s always more coming!</p>
+<div><br></div>
+
+<p><em>March 30, 2017<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fcalls&amp;text=Telegram%20is%20rolling%20out%20Voice%20Calls%3A%20secure%2C%20crystal-clear%2C%20constantly%20improved%20by%20machine%20learning" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Telegram is rolling out Voice Calls: secure, crystal-clear, constantly improved by machine learning" data-url="blog/calls.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Telegram is rolling out Voice Calls: secure, crystal-clear, constantly improved by machine learning" data-url="https://telegram.org/blog/calls" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/android-themes.html">Custom Themes</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140945/4/e0RIVZ4CSeI.23438.gif/3a18d6fc7f66340693.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140722/2/3cY8obIVMwk.102339/19827a3ef0493d9816.jpg" target="_blank"><img src="file/811140722/2/3cY8obIVMwk.102339/19827a3ef0493d9816.jpg" title="Themes for Android"/></a>
+</div>
+
+<p>We believe in freedom. This is why Telegram is a <strong>free</strong> and <strong>open</strong> platform – for <a href="blog/stickers-revolution.html">stickers</a>, for <a href="https://core.telegram.org/bots">bots</a>, and even for third-party client apps. We believe that if we give you freedom, you’ll know what to do with it. </p>
+<p>Starting today, <strong>85%</strong> of Telegram users can completely change what Telegram looks like for them. We are rolling out <strong>Custom Themes</strong> on Android, and will later support them on less popular platforms. </p>
+<p>To switch to a different theme or create a new one, go to <strong>Settings &gt; Theme</strong>. We‘ve included a Dark Theme in that menu for those of you who don’t want to use Telegram as a flashlight in dark places.</p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140534/3/Jcxk1ft6_QA.150124/4a92545bd97f1f0b95.jpg" target="_blank"><img src="file/811140534/3/Jcxk1ft6_QA.150124/4a92545bd97f1f0b95.jpg" title="New dark theme"/></a>
+    <p>The new dark theme</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140775/2/3HstCBM83ak.64545/807483434cd4cd2051.jpg" target="_blank"><img src="file/811140775/2/3HstCBM83ak.64545/807483434cd4cd2051.jpg" title="Easy on the eyes"/></a>
+    <p>Easy on the eyes</p>  </div>
+</div>
+
+<h3><a class="anchor" name="create-your-own" href="#create-your-own"><i class="anchor-icon"></i></a>Create Your Own</h3>
+<p>We&#39;ve also added a Theme Editor to the app. You can now create new themes and easily share them with other users. </p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140067/2/xAHEh8vRQRI.113778/98dadfe40069af96f3.jpg" target="_blank"><img src="file/811140067/2/xAHEh8vRQRI.113778/98dadfe40069af96f3.jpg" title="Choose an element"/></a>
+    <p>Choose an element</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140416/1/itV_yQQe-gs.645617/f84b7ee526466bdf11.png" target="_blank"><img src="file/811140416/1/itV_yQQe-gs.645617/f84b7ee526466bdf11.png" title="Pick a color"/></a>
+    <p>Pick a color</p>  </div>
+</div>
+
+<p>Just like stickers and bots, Telegram themes are part of an open platform, so anybody can create a theme and dazzle the world with new colors and backgrounds. Here&#39;s another example of a theme created by our users:</p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140767/2/TogG9vkUvYo.119652/badee5d60730dfe6a2.jpg" target="_blank"><img src="file/811140767/2/TogG9vkUvYo.119652/badee5d60730dfe6a2.jpg" title="Chats list"/></a>
+    <p>Theme preview: Chats list</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140986/3/cOsdERdWi-A.154455/3c1c59c24251238040.jpg" target="_blank"><img src="file/811140986/3/cOsdERdWi-A.154455/3c1c59c24251238040.jpg" title="Chat screen"/></a>
+    <p>Chat screen</p>  </div>
+</div>
+
+<p>Check out the <a href="https://t.me/androidthemes"><strong>@AndroidThemes</strong></a> and <a href="https://t.me/themes">Desktop Themes</a> channels for more new themes made by Telegram users. </p>
+<p>If you&#39;re using our <strong>iOS</strong> app, hold on for a couple of weeks. You‘ll get themes eventually, but for now we’re building something different for you – and it’s truly epic.</p>
+<div><br></div>
+
+<p><em>February 20, 2017<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fandroid-themes&amp;text=Custom%20Themes%20and%20Theme%20Editor%20have%20just%20landed%20on%20Telegram%20for%20Android." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Custom Themes and Theme Editor have just landed on Telegram for Android." data-url="blog/android-themes.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Custom Themes and Theme Editor have just landed on Telegram for Android." data-url="https://telegram.org/blog/android-themes" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/android-wear-2-0.html">Telegram for Android Wear 2.0</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140743/4/8KTqfwpP2Xg.30391/8973f93bfd547e4d41.jpg" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140276/3/HGDK8FLA0z4.113346/7ee3ecb54ecf0e501b.jpg" target="_blank"><img src="file/811140276/3/HGDK8FLA0z4.113346/7ee3ecb54ecf0e501b.jpg" title="Telegram launches Android Wear 2.0 app"/></a>
+</div>
+
+<p>Google has just unveiled <a href="https://blog.google/products/android-wear/android-wear-20-make-most-every-minute/">Android Wear 2.0</a>, the latest in smartwatch platforms. It supports standalone apps, so today we&#39;re releasing <strong>Telegram for Android Wear 2.0.</strong> It‘s everything you’d want from a perfect watch app — compact, beautiful, and super-fast. </p>
+<div class="blog_video_player_wrap" style="max-width: 640px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="YYY.html" style="max-width: 640px;">
+  <source src="file/811140037/1/CoPFO1iMFu8.4014450.mp4/857242466200a07c25" type="video/mp4">
+ </video>
+</div>
+
+<p>Using this tiny yet powerful app, you can browse your chats and quickly reply to messages with voice, text, emoji, or stickers. You can also view your contacts and even create groups right from your watch.</p>
+<div class="blog_wide_image">
+  <a href="file/811140855/2/QhPFxtrKQQU.204643/9a1dd613ab3f0a6307.jpg" target="_blank"><img src="file/811140855/2/QhPFxtrKQQU.204643/9a1dd613ab3f0a6307.jpg" title="Send voice, text messages, and stickers" /></a></div>
+
+<div class="blog_wide_image">
+  <a href="file/811140090/3/R2GWTvcOCto.156067/b322ddc88a5f3275d7.jpg" target="_blank"><img src="file/811140090/3/R2GWTvcOCto.156067/b322ddc88a5f3275d7.jpg" title="Browse your chats and get notifications" /></a></div>
+
+<p>The smartwatch app also supports several themes in different colors. By the way, theme support is coming to our main Android app soon, so stay tuned.</p>
+<p>Telegram for Android Wear 2.0 is available for download on Google Play. If you have Android Wear 2.0 installed on your watch, just search for Telegram in the store.</p>
+<div></br></div>
+
+<p><em>February 9, 2017<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fandroid-wear-2-0&amp;text=The%20new%20Telegram%20app%20for%20Android%20Wear%202.0%20is%20already%20out.%20It%27s%20compact%2C%20beautiful%2C%20and%20super-fast." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="The new Telegram app for Android Wear 2.0 is already out. It&#39;s compact, beautiful, and super-fast." data-url="blog/android-wear-2-0.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="The new Telegram app for Android Wear 2.0 is already out. It&#39;s compact, beautiful, and super-fast." data-url="https://telegram.org/blog/android-wear-2-0" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/desktop-1-0.html">Telegram Desktop reaches version 1.0 – and it&#39;s BEAUTIFUL</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140550/1/pQ0yMAJqgr0.19948.gif/71e791984bba07bfca.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140732/1/lA-jWG-_Ldg.115711/647a0b06fd62ef73aa.jpg" target="_blank"><img src="file/811140732/1/lA-jWG-_Ldg.115711/647a0b06fd62ef73aa.jpg" title="Telegram Desktop reaches version 1.0"/></a>
+</div>
+
+<p>Telegram was available for desktops and laptops since <strong>2013</strong>. Today it finally graduates to version <strong>1.0</strong> with a fabulous new design.</p>
+<p>Consistent material design, great animations, and support for custom themes make Telegram for Windows, Mac, and Linux <strong>the</strong> tool for messaging from your Mac or PC.</p>
+<p>This is what <a href="https://desktop.telegram.org/">Telegram Desktop 1.0</a> looks like:</p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140816/3/h5HnYvmF-RY.46465/9952eea3eec0a8e9a7.jpg" target="_blank"><img src="file/811140816/3/h5HnYvmF-RY.46465/9952eea3eec0a8e9a7.jpg" title="Login screen"/></a>
+    <p>Login Screen</p>
+    </div>
+      <div class="blog_image_wrap">
+    <a href="file/811140557/4/6zghfkT1Uyc.365727/a7c0863af9ecc4b3af.jpg" target="_blank"><img src="file/811140557/4/6zghfkT1Uyc.365727/a7c0863af9ecc4b3af.jpg" title="Your chats"/></a>
+    <p>Your Chats</p>
+  </div>
+</div>
+
+<p>Smooth animations are now everywhere:</p>
+<div class="blog_video_player_wrap" style="max-width: 640px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140111/3/IyTIufSQK-g.56121/460cfe8041b2c32696.png" style="max-width: 640px;">
+  <source src="file/811140855/1/3qsoZxNgc0o.379223.mp4/3d741486e777e10af8" type="video/mp4">
+ </video>
+</div>
+
+<h3><a class="anchor" name="custom-themes" href="#custom-themes"><i class="anchor-icon"></i></a>Custom Themes</h3>
+<p>If you&#39;re looking for an alternative design, Telegram Desktop also supports customized themes. <strong>Anyone</strong> can make a theme for Telegram Desktop. This theme, for example, changes green outgoing messages to blue:</p>
+<div class="blog_image_wrap">
+  <a href="https://t.me/themes/6" target="_blank"><img src="file/811140968/3/UfbcOfXv2YU.118417/b230905e577f9cc2de.jpg" title="Blue theme by Pavel Durov" /></a>
+  <p><a href="https://t.me/themes/6" target="_blank">Blue theme</a></p>
+</div>
+
+<p>And here’s a third-party night mode theme:</p>
+<div class="blog_image_wrap">
+  <a href="https://t.me/themes/7" target="_blank"><img src="file/811140839/1/QrFB0s48_pg.105284/260a84021f203c3bc1.jpg" title="Dark theme by Cristian Ospina" /></a>
+  <p><a href="https://t.me/themes/7" target="_blank">Dark theme</a></p>
+</div>
+
+<h3><a class="anchor" name="what-else-makes-telegram-desktop-cool" href="#what-else-makes-telegram-desktop-cool"><i class="anchor-icon"></i></a>What Else Makes Telegram Desktop Cool?</h3>
+<p>The best thing about Telegram Desktop is that it automatically syncs messages from your phone with your computer using Telegram’s encrypted cloud. Just <a href="https://desktop.telegram.org/">install it</a> and log in to your account! All your messages, documents, photos and videos will be synced for you from the secure cloud.</p>
+<p>Thanks to <a href="blog/drafts.html">Cloud Drafts</a>, you can even start typing on your phone, then continue on your desktop when you reach home or work. </p>
+<p>Who needs email now? Telegram Desktop is many times faster and handles attachments like a pro. Just share your <a href="https://t.me/username">t.me/username</a> with those who want to reach you. </p>
+<div><br></div>
+
+<p><em>January 11, 2017<br>The Telegram Team</em></p>
+<div><br></div>
+
+<p><strong>P.S.</strong> For desktop experiences, we also have <a href="https://web.telegram.org/">Telegram Web</a> and <a href="https://macos.telegram.org/">Telegram Mac</a>, but our founder insists that Telegram Desktop is the way to go on all platforms.</p>
+<p><strong>P.P.S.</strong> If you&#39;re looking for an easy way to get your emails right in Telegram, check out <a href="https://t.me/gmailbot">this Gmail bot</a>. Helps one to stay in touch with those who insist on using antique methods of communication.</p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fdesktop-1-0&amp;text=Telegram%20Desktop%201.0%20is%20out%21%20Check%20out%20the%20fabulous%20new%20design%20and%20customizable%20themes.%20" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Telegram Desktop 1.0 is out&#33; Check out the fabulous new design and customizable themes. " data-url="blog/desktop-1-0.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Telegram Desktop 1.0 is out&#33; Check out the fabulous new design and customizable themes. " data-url="https://telegram.org/blog/desktop-1-0" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/unsend-and-usage.html">Unsend Messages, Network Usage, and More</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="img/tl_card_private.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140341/1/zhMcdpMpEXs.118388/487f95a64006421bd1.jpg" target="_blank"><img src="file/811140341/1/zhMcdpMpEXs.118388/487f95a64006421bd1.jpg" title="Telegram 3.16: Network usage"/></a>
+</div>
+
+
+<p>Happy new 2017! We hope everybody had a great celebration. We at Telegram certainly did. One of our engineers got so excited about the new year that he mistakenly shared these stickers with his Mom:</p>
+<div class="blog_image_wrap">
+  <a href="https://telegram.me/addstickers/VeryBadSantaClaus" target="_blank"><img src="file/811140519/2/Qqs_1HVA6V4.210903/9998282a4a16bd7f9b.jpg" title="Not the best idea for sticker for anyone's mom" /></a>
+  <p>Ooops!</p>
+</div>
+
+<p>To fix this, he quickly added a way to unsend recently sent messages. This smart move saved his morning, and it can still save yours! If you use Telegram v.3.16, you can now unsend any weird messages you shared within the last 48 hours.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140497/1/BL1Yg4YUb3g.107360/73e2f80f96a2db763d.jpg" target="_blank"><img src="file/811140497/1/BL1Yg4YUb3g.107360/73e2f80f96a2db763d.jpg" title="Delete messages for everyone" /></a>
+  <p>Works in groups and PM</p>
+</div>
+
+<p>Naturally, this isn‘t a one-time feature. After this update, you’ll be able to retract any messages within 48 hours of sending them. Take that, Friday nights!</p>
+<h3><a class="anchor" name="network-usage" href="#network-usage"><i class="anchor-icon"></i></a>Network usage</h3>
+<p>The holiday season is in high swing in many parts of the world, so we figured some of you folks are busy traveling. If that&#39;s the case, you may want to check out the new Network Usage section that shows exactly how much data you consumed while in roaming or wi-fi or whatever.</p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140622/2/zmUNTTKGdIE.71298/09709e87e275222ac3.jpg" target="_blank"><img src="file/811140622/2/zmUNTTKGdIE.71298/09709e87e275222ac3.jpg" title="New 'Data & Storage' section"/></a>
+    <p>Data and Storage</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140351/1/ncMsma4oorI.72205/a3b5e8267344da74b3.jpg" target="_blank"><img src="file/811140351/1/ncMsma4oorI.72205/a3b5e8267344da74b3.jpg" title="New 'Network Usage' section"/></a>
+    <p>Network Usage</p>  </div>
+</div>
+
+<p>Don&#39;t forget to hop on the hotel wifi before any serious Telegramming in foreign lands. And remember that you can toggle automatic media download in Telegram Settings.</p>
+<h3><a class="anchor" name="t-me-links" href="#t-me-links"><i class="anchor-icon"></i></a>T.me Links</h3>
+<p>This is the perfect season to meet new people. Want to give them some contact information, but a phone number seems like too much? That&#39;s exactly the reason we added <strong>usernames</strong> and Telegram.me links <a href="blog/usernames-and-secret-chats-v2.html">waaay back</a> in 2014.</p>
+<p>Starting today, you can use <strong>t.me</strong> instead of telegram.me. Take a napkin, write <a href="https://t.me/username"><strong>t.me/username</strong></a> in no time, and give it to someone before they can get away!</p>
+<p>This also works with channels:<br><a href="https://t.me/telegram"><strong>t.me/telegram</strong></a><br>Public groups:<br><a href="https://t.me/snowballfight"><strong>t.me/snowballfight</strong></a><br>And stickers:<br><a href="https://t.me/addstickers/NickSantini"><strong>t.me/addstickers/NickSantini</strong></a></p>
+<h3><a class="anchor" name="android-developers-never-sleep" href="#android-developers-never-sleep"><i class="anchor-icon"></i></a>Android Developers Never Sleep</h3>
+<p>85% of Telegram users are on Android. Our CEO is worried that, if ignored, this Android population can start a rebellion and dethrone him. To please the mob, he made us introduce the following features to the Android app:</p>
+<ul>
+<li>Messages from one sender are now neatly grouped together, and scrolling up shows the date right away, making the chats easier to navigate.</li>
+<li>The app now restores your previous scroll position when you switch back to a chat. Very useful when somebody sends you a saga in 1,000 messages, and you want to patiently read them in the right order.</li>
+</ul>
+<div class="blog_image_wrap">
+  <a href="file/811140352/1/wxzxTmvS07c.156395/122fd75657c85aef81.jpg" target="_blank"><img src="file/811140352/1/wxzxTmvS07c.156395/122fd75657c85aef81.jpg" title="Floating date" /></a>
+  <p>That's the date up there</p>
+</div>
+
+<ul>
+<li>Sharing files (a feature we had <a href="blog/shared-files.html">since forever</a>) has become easier because you see a list of recently downloaded files right on the sharing screen.</li>
+</ul>
+<div class="blog_image_wrap">
+  <a href="file/811140524/1/2qLhKladvNY.86955/5420c9ddfe046db207.jpg" target="_blank"><img src="file/811140524/1/2qLhKladvNY.86955/5420c9ddfe046db207.jpg" title="Recently downloaded files" /></a>
+  <p>Recently downloaded files</p>
+</div>
+
+<ul>
+<li>We now support GBoard, the Google keyboard that can apparently send cat GIFs.</li>
+<li>And for those 2 users that already have Android 7.1 installed, we are happy to announce that we&#39;ve added a fast action menu with frequent chats to your home screen. All hail the early adopters!</li>
+<li>Back to the important stuff: the cowboy, the clown, and the sick face emoji (also known as the ‘exfoliating green tea mask face’ emoji) have found their way to Android. We support all of them now. </li>
+</ul>
+<div class="blog_image_wrap">
+  <a href="file/811140138/1/fRxQ-bJxmYQ.59803/93f5bb4482aa5520c8.jpg" target="_blank"><img src="file/811140138/1/fRxQ-bJxmYQ.59803/93f5bb4482aa5520c8.jpg" title="The cowboy, the clown, the sickface" /></a>
+  <p>New emoji</p>
+</div>
+
+<p>What do these emoji mean? When are you supposed to use them? Is the singular form of ‘emoji’ in fact ‘emojus’? To answer all these questions with utmost accuracy, we&#39;ve also added support for this one: </p>
+<div class="blog_image_wrap">
+  <a href="file/811140578/1/OhaZ6npihrM.12864/aceea75198f3d1f334.jpg" target="_blank"><img src="file/811140578/1/OhaZ6npihrM.12864/aceea75198f3d1f334.jpg" title="¯\_(ツ)_/¯" /></a>
+</div>
+
+<div><br></div>
+
+<p><em>January 3, 2017<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Funsend-and-usage&amp;text=Take%20back%20recently%20sent%20messages%2C%20check%20network%20usage%20stats%2C%20and%20enjoy%20Android%20progress%20with%20v.3.16" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Take back recently sent messages, check network usage stats, and enjoy Android progress with v.3.16" data-url="blog/unsend-and-usage.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Take back recently sent messages, check network usage stats, and enjoy Android progress with v.3.16" data-url="https://telegram.org/blog/unsend-and-usage" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/telegraph.html">Meet the Telegraph API for Logins and Stats</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140192/1/8zxoMewTttA.19076.gif/7d9dc23b5c489889f2.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140775/1/Pc_4R_013Ow.144034/1c1eeaa592370d0b93.jpg" target="_blank"><img src="file/811140775/1/Pc_4R_013Ow.144034/1c1eeaa592370d0b93.jpg" title="Introducing the Telegraph Bot and API for Logins and Stats"/></a>
+</div>
+
+<p>Last month, we launched <strong><a href="https://telegra.ph/">Telegra.ph</a></strong>, a <a href="blog/instant-view.html#telegraph">minimalist publishing tool</a> that allows you to create richly formatted posts and push them to the Web in just a click.</p>
+<p>We tried to keep Telegraph‘s interface as simple as possible: there’s no need to log in or navigate menus. You just open <strong><a href="https://telegra.ph/">telegra.ph</a></strong>, write your post, hit publish, and it&#39;s live.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140621/3/kegaid4txDs.18762/bf5ce62806cb4349a7.jpg" target="_blank"><img src="file/811140621/3/kegaid4txDs.18762/bf5ce62806cb4349a7.jpg" title="Telegra.ph main page" /></a>
+  <p>Yes, it's <b>that</b> simple</p>
+</div>
+
+<h3><a class="anchor" name="better-with-bots" href="#better-with-bots"><i class="anchor-icon"></i></a>Better with Bots</h3>
+<p>This simplicity has its price of course. Sometimes you want to <strong>edit</strong> your articles on several devices or stay logged in to avoid having to write your name and profile link under each new title. If any of this sounds familiar, meet our new <strong><a href="https://telegram.me/telegraph">@Telegraph</a> bot</strong>.</p>
+<p>This simple bot will help you <strong>log in</strong> and manage your Telegraph posts across any number of devices. In addition, it can give you <strong>page view statistics</strong> for any post on Telegraph. Just send it a link and watch the numbers roll in.</p>
+<h3><a class="anchor" name="a-time-to-gather-stones" href="#a-time-to-gather-stones"><i class="anchor-icon"></i></a>A Time to Gather Stones</h3>
+<p>If you have created some Telegraph posts in the past using browsers on your different devices, the <strong><a href="https://telegram.me/telegraph">@Telegraph</a></strong> bot helps unite them all under your rule.</p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140560/3/xkwhA6Mrwz0.48125/95ac7d21902ad9e552.jpg" target="_blank"><img src="file/811140560/3/xkwhA6Mrwz0.48125/95ac7d21902ad9e552.jpg" title="A time to log in"/></a>
+    <p>A time to log in</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140507/1/8Nu9nYPNsY4.28574/39c8067a8e9720a644.jpg" target="_blank"><img src="file/811140507/1/8Nu9nYPNsY4.28574/39c8067a8e9720a644.jpg" title="And a time to gather posts"/></a>
+    <p>And a time to gather posts</p>  </div>
+</div>
+
+<p>Simply press the <strong>Log in on this device</strong> button, and all posts you‘ve previously written in that device’s browser will be added to your Telegraph account.</p>
+<h3><a class="anchor" name="telegraph-api" href="#telegraph-api"><i class="anchor-icon"></i></a>Telegraph API</h3>
+<p>Mind you, <strong>Telegraph</strong> is not intended just for Telegram users. Anyone can use this dead-simple publishing tool. For those who are suffering the constraints of other messengers and can&#39;t enjoy the comfort offered by the <a href="https://telegram.me/telegraph"><strong>@Telegraph</strong></a> bot, we have created an open <a href="http://telegra.ph/api"><strong>Telegraph API</strong></a>.</p>
+<p>Using the <a href="http://telegra.ph/api"><strong>Telegraph API</strong></a>, any developer can create bots like <a href="https://telegram.me/telegraph"><strong>@Telegraph</strong></a> for any other platform, or even standalone interfaces.</p>
+<blockquote>
+<p>Here&#39;s the <a href="http://telegra.ph/api">full documentation</a>, in case you&#39;re interested.</p>
+</blockquote>
+<p>Meanwhile, allow us to return to our coding dungeons where we&#39;re brewing another update to our apps for you this year.</p>
+<div><br></div>
+
+<p><em>December 20, 2016<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Ftelegraph&amp;text=Introducing%20The%20Telegraph%20Bot%20and%20API%20%E2%80%93%20with%20logins%2C%20page%20view%20stats%2C%20and%20more." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Introducing The Telegraph Bot and API – with logins, page view stats, and more." data-url="blog/telegraph.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Introducing The Telegraph Bot and API – with logins, page view stats, and more." data-url="https://telegram.org/blog/telegraph" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/pin-and-ifttt.html">Pinned Chats and IFTTT Integrations</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140100/4/jA_nQnEpgms.25127.gif/126a6e606f47ebad0b.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140176/2/8aGsqtCNmeo.176599/44e128efb4b6ea9cb5.jpg" target="_blank"><img src="file/811140176/2/8aGsqtCNmeo.176599/44e128efb4b6ea9cb5.jpg" title="Integrate Telegram with over 360 services using IFTTT"/></a>
+</div>
+
+<p>If you’re like us, you probably have dozens of active chats on Telegram. But none of them matter when you miss a new message from your Mom. Or Spouse. Or Mad Boss. Today we’re launching Telegram <strong>3.15</strong>, which allows you to pin important conversations to the top of your inbox.</p>
+<p>This feature is also valuable for teams that coordinate their work over Telegram. Pinned chats offer an easy way of keeping work-related chats reachable in a predictable order whenever you open Telegram.</p>
+<div class="smartphone_video_player_wrap">
+ <div class="smartphone_video_player_iphone">
+ <video class="smartphone_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)" poster="file/811140752/2/7bq-hlLHYNU.57948/fcf23f8589639a88fd.jpg"  loop controls muted>
+  <source src="file/811140404/2/Cy1SSr0jHjI.65425.mp4/bafbdfc850c3680552" type="video/mp4">
+ </video>
+ </div>
+</div>
+
+<p>To pin a chat, long tap  on it (swipe left on iOS) and select Pin. Easy! You can pin up to 5 chats to the top (plus 5 secret chats).</p>
+<h3><a class="anchor" name="ifttt-if-this-then-that" href="#ifttt-if-this-then-that"><i class="anchor-icon"></i></a>IFTTT (If This Then That)</h3>
+<p>Starting today, you can link your Telegram account with more than <strong>360</strong> other services by setting up “If This Then That” integrations (or “Applets”). This works with anything from social networks like <strong>Twitter</strong> and <strong>Instagram</strong>, to productivity tools like <strong>Gmail</strong> or <strong>Pocket</strong>, entertainment apps like <strong>Spotify</strong> or <strong>Pinterest</strong>, cloud services like <strong>Dropbox</strong> or <strong>Google Drive</strong>, and <strong>Internet of Things</strong> devices like <strong>Nest</strong>, <strong>LIFX</strong>, or <strong>Philips Hue</strong>.</p>
+<p>Telegram is the first messaging app to be fully integrated with <a href="https://ifttt.com/telegram">IFTTT</a>. Unlike most services, we allow <strong>two-way interactions</strong>: You can control other services via Telegram, or receive notifications and content like photos and videos when they do something.</p>
+<p>You can also invite the <a href="https://telegram.me/ifttt">@IFTTT</a> bot to any of your groups so members can <strong>collaboratively</strong> interact with your services or devices.</p>
+<div class="blog_3images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140591/2/CGUXnB8v_Qo.106387/e943e942a837d7d079.jpg" target="_blank"><img src="file/811140591/2/CGUXnB8v_Qo.106387/e943e942a837d7d079.jpg" title="Instagram to Telegram"/></a>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140853/1/UvprhCrfYCc.113966/29b73eb40a70cca8f2.jpg" target="_blank"><img src="file/811140853/1/UvprhCrfYCc.113966/29b73eb40a70cca8f2.jpg" title="Facebook to Telegram"/></a></div>
+      <div class="blog_image_wrap">
+    <a href="file/811140337/1/vDGqaTsgq9M.96794/dee631e224deba082a.jpg" target="_blank"><img src="file/811140337/1/vDGqaTsgq9M.96794/dee631e224deba082a.jpg" title="Telegram to Gmail"/></a></div>
+</div>
+
+
+<p>To get started, talk to the <a href="https://telegram.me/ifttt"><strong>@IFTTT</strong></a> bot, then enable some <a href="https://ifttt.com/telegram">Applets</a> or create your own. Since the IFTTT platform supports over <strong>360</strong> services, endless combinations are possible. Here are just a few examples:</p>
+<ul>
+<li>Get a Telegram message when <a href="https://ifttt.com/applets/M5JDu4Gx-get-a-telegram-message-when-important-emails-arrive">important emails</a> arrive.</li>
+<li>Whenever you are <a href="https://ifttt.com/applets/UjfzrX8Y-whenever-you-are-mentioned-on-twitter-post-a-message-to-telegram">mentioned on Twitter</a>, send the tweet to Telegram.</li>
+<li>Every time you post a new <a href="https://ifttt.com/applets/YCB6Gvfg-every-time-you-post-a-new-instagram-photo-share-it-to-a-telegram-chat">Instagram photo</a>, share it with a Telegram chat.</li>
+<li>Share tracks you add to a <a href="https://ifttt.com/applets/veDyZfR8-share-tracks-you-add-to-a-spotify-playlist-to-a-telegram-group-or-channel">Spotify playlist</a> with a Telegram group or channel.</li>
+<li>Message @IFTTT on Telegram to change the <a href="https://ifttt.com/applets/E7qB8aSs-change-the-color-of-your-hue-lights-via-telegram">color of your Hue lights</a>.</li>
+<li>Automatically <a href="https://ifttt.com/applets/FyU3EhJZ-tweet-new-text-posts-from-your-telegram-channel">tweet new posts</a> from your Telegram channel.</li>
+</ul>
+<blockquote>
+<p>Check out the <a href="https://ifttt.com/telegram">IFTTT website</a> for a full list of existing <a href="https://ifttt.com/telegram"><strong>Telegram Applets</strong></a> and don’t hesitate to <strong>create your own</strong>.</p>
+</blockquote>
+<h3><a class="anchor" name="making-android-great-again-part-2" href="#making-android-great-again-part-2"><i class="anchor-icon"></i></a>Making Android Great Again, Part 2</h3>
+<p>Remember our promise to <a href="blog/instant-view.html#android-strikes-back">Make Android Great Again</a>? We were serious. In Telegram <strong>3.15</strong> for Android, we bring you three great features: High-precision rotation and cropping in the photo editor, a new player for Youtube videos with Picture-In-Picture mode, and forwarding messages and media to secret chats.</p>
+<p><strong>1.</strong> At long last, you can make that horizon look <em>horizontal</em>. Rotate your photos by any small number of degrees in the updated photo editor. </p>
+<div class="blog_image_wrap">
+  <a href="file/811140904/1/TiSnPugYLCg.112092/93dc41909eddfe1559.jpg" target="_blank"><img src="file/811140904/1/TiSnPugYLCg.112092/93dc41909eddfe1559.jpg" title="Rotate and Crop" /></a>
+  <p>Rotate and Crop</p>
+</div>
+
+
+<p><strong>2.</strong> Want to continue chatting while watching a YouTube video? Tap the Picture-In-Picture icon in the new sleek video player for YouTube/Vimeo links. The video will shrink, and you can drag it around the screen so that it doesn&#39;t get in the way. The new video player also toggles fullscreen mode when you rotate your phone accordingly.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140023/3/LnHXZDxwM5k.103867/45cb9de0f979fd46e6.jpg" target="_blank"><img src="file/811140023/3/LnHXZDxwM5k.103867/45cb9de0f979fd46e6.jpg" title="Picture-In-Picture" /></a>
+  <p>Picture-In-Picture</p>
+</div>
+
+<p><strong>3.</strong> Secret Chats are the most secure way to share data on Planet Earth, and it is only natural they don’t let you forward stuff <strong>from</strong> them. However, they don’t restrict you from importing texts and media <strong>into</strong> them. With Telegram 3.15 for Android, you can forward messages and media from Cloud Chats and Channels to Secret Chats.</p>
+<p>We know many of you got a bit addicted to Telegram updates, and keep asking us for more. We&#39;re happy to oblige. Stay tuned for more updates coming this December!</p>
+<div><br><br></div>
+
+<p><em>December 7, 2016<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fpin-and-ifttt&amp;text=Introducing%20Pinned%20Chats%2C%20%40IFTTT%20integrations%20with%20hundreds%20of%20services%2C%20and%20new%20Android%20features" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Introducing Pinned Chats, @IFTTT integrations with hundreds of services, and new Android features" data-url="blog/pin-and-ifttt.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Introducing Pinned Chats, @IFTTT integrations with hundreds of services, and new Android features" data-url="https://telegram.org/blog/pin-and-ifttt" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/instant-view.html">Instant View, Telegraph, and Other Goodies</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140520/1/u1WmYCpjBoQ/ea7ebbbc053abd591d.gif" class="blog_side_image"/>
+</div>
+
+
+<div class="blog_wide_image">
+    <a href="file/811140505/3/_dlst-OYofc.208225/903d7579a66642b441.jpg" target="_blank"><img src="file/811140505/3/_dlst-OYofc.208225/903d7579a66642b441.jpg" title="This blog post was the first one to get its own full color illustration (the bot prize one was cut out of a poster). And if you were looking for the only funny alt text added before Summer 2019, you've found it. Go home. Yes, I know it's not really that funny."/></a>
+</div>
+
+<div>Meet <b>Instant View</b>, an elegant way to view <s>your dog</s> articles with zero pageload time. To try it out, use Telegram version <b>3.14</b> to share a link to a <b><a href="https://medium.com/">Medium</a></b> post or a <a href="https://techcrunch.com/"><b>TechCrunch</b></a> article. This will get you an <i>Instant View</i> button that immediately shows a native page, saving you time and data. </div>
+
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140831/2/hCo6ELf7oWs.134511/4233a17be835481dc4.jpg" target="_blank"><img src="file/811140831/2/hCo6ELf7oWs.134511/4233a17be835481dc4.jpg" title="Instant View button"/></a>
+    <p>Instant View button</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140368/2/RfcQmOykCAE.162784/ae6ebd67a71e9a0bee.jpg" target="_blank"><img src="file/811140368/2/RfcQmOykCAE.162784/ae6ebd67a71e9a0bee.jpg" title="Full peview"/></a>
+    <p>Saves time and data</p>  </div>
+</div>
+
+<p>If you have feedback about the way an Instant View page was generated, ping our <a href="https://telegram.me/previews">@previews</a> bot. Only a handful of websites are supported at the moment, but we&#39;ll be adding more as we go. Eventually we want to provide Instant View pages for every story on the Web and thus devour the entire Internet (*evil laugh*).</p>
+<h3><a class="anchor" name="telegraph" href="#telegraph"><i class="anchor-icon"></i></a>Telegraph</h3>
+<p>Today we are launching <a href="https://telegra.ph/"><strong>Telegraph</strong></a> – a publishing tool that lets you create richly formatted posts with photos and all sorts of embedded stuff. Telegraph posts get beautiful Instant View pages on Telegram.</p>
+<p>To try it, go to <a href="https://telegra.ph/"><strong>telegra.ph</strong></a>, publish a story, and share it on Telegram. With Telegraph, your Telegram channel can run stories just like the mainstream media (although you may find it tricky to become as biased).</p>
+<h3><a class="anchor" name="jump-to-date" href="#jump-to-date"><i class="anchor-icon"></i></a>Jump to Date</h3>
+<p>You can now travel in time to any moment in the past. Just tap <strong>Search</strong> inside a chat and choose a day using the <strong>Calendar</strong> tool. </p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140633/3/li2YSyBrIko.95469/a1f69dca2b7e762940.jpg" target="_blank"><img src="file/811140633/3/li2YSyBrIko.95469/a1f69dca2b7e762940.jpg" title="Calendar button"/></a>
+    <p>Calendar button</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140654/2/AGv-djof444.62597/42fdfa8a58cdd6b7ab.jpg" target="_blank"><img src="file/811140654/2/AGv-djof444.62597/42fdfa8a58cdd6b7ab.jpg" title="Pick a day"/></a>
+    <p>Pick a day</p>  </div>
+</div>
+
+<p>Unfortunately, this doesn&#39;t work with dates from the future. Sorry, no flying cars and hoverboards for you today.</p>
+<h3><a class="anchor" name="view-pack-for-recent-stickers" href="#view-pack-for-recent-stickers"><i class="anchor-icon"></i></a>View Pack for Recent Stickers</h3>
+<p>Remember all those times when you had a sad Pepe among your recently sent stickers? If you‘re like us, your natural desire would’ve been to reunite the sad Pepe with the rest of his family by scrolling to the <a href="https://telegram.me/addstickers/SuperPepe">Pepe pack</a> in your sticker panel.</p>
+<p>You can now do that in an instant: try a long tap (or 3D-touch on iOS) on a recent sticker, then choose ‘View Pack’. Hey presto! For some mysterious reason, this also works with non-Pepe stickers.</p>
+<div class="smartphone_video_player_wrap">
+ <div class="smartphone_video_player_iphone">
+ <video class="smartphone_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)" poster="file/811140254/2/G8ZwLA-hOMY.67414/0620f6a222e28d0976.jpg"  loop controls muted>
+  <source src="file/811140934/2/zdiDO6qiVKc.1141368.mp4/1fe0052aa657009124" type="video/mp4">
+ </video>
+ </div>
+</div>
+
+<!---/file/811140979/5/zR0PDURbvOs.1156175.mp4/c675825e3a1ed4e3d6--->
+
+<h3><a class="anchor" name="groups-in-common" href="#groups-in-common"><i class="anchor-icon"></i></a>Groups in Common</h3>
+<p>Sometimes you want to find a group in your chats, but can‘t recall the title. Here’s a life-hack for you: think about a contact of yours that was also a member in that group. This association technique may help you bring back the title too. If it doesn‘t, open that contact’s profile and tap <strong>Groups in Common</strong>. </p>
+<h3><a class="anchor" name="android-strikes-back" href="#android-strikes-back"><i class="anchor-icon"></i></a>Android Strikes Back</h3>
+<p>Some of you Android users told us we loved iPhones more than Androids. That almost made us cry (remember the sad Pepe in our recent stickers?). To make things right with you, we fired our iOS dev, who was too good. </p>
+<p>Well, not really. We simply locked ourselves in the coding basement for several weeks to bring you this:</p>
+<ul>
+<li>A slick new interface for creating groups and selecting users in privacy settings (shiny animations included).</li>
+<li>A new beautiful interface for notification settings.</li>
+<li>Improved security for passcode locks (your chats won&#39;t be seen in the task switcher now). This one also works on iOS.</li>
+<li>Improved camera speed when taking photos and videos.</li>
+<li>Better video compression.</li>
+<li>An improved and less obstructive photo viewer.</li>
+<li>Easier editing of messages and adding captions to photos.</li>
+</ul>
+<p>And that&#39;s just getting us warmed up. Make Android Great Again! </p>
+<h3><a class="anchor" name="also" href="#also"><i class="anchor-icon"></i></a>Also</h3>
+<p>Something big is brewing in our secret dungeons. Stay tuned.</p>
+<div><br></div>
+
+<p><em>November 22, 2016<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Finstant-view&amp;text=Instant%20View%20for%20articles%2C%20Jump%20to%20Date%2C%20Groups%20in%20Common%2C%20and%20Telegraph%20%E2%80%93%20a%20publishing%20tool." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Instant View for articles, Jump to Date, Groups in Common, and Telegraph – a publishing tool." data-url="blog/instant-view.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Instant View for articles, Jump to Date, Groups in Common, and Telegraph – a publishing tool." data-url="https://telegram.org/blog/instant-view" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/botprize1.html">First BotPrize Winners Get &#036;200,000</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap"><img src="file/811140614/2/flKQKZ7xUOE.27938.gif/5574a04570218c9e11.gif" class="blog_side_image"></div>
+
+<div class="blog_wide_image">
+    <a href="file/811140545/3/CtwAeY9PCBc.271011/d2704b332fb92de89d.jpg" target="_blank"><img src="file/811140545/3/CtwAeY9PCBc.271011/d2704b332fb92de89d.jpg" title="Telegram Bot Prize"/></a>
+</div>
+
+<p>Earlier this year we announced <a href="blog/botprize.html">BotPrize</a>, our initiative to award <strong>$25,000-$50,000</strong> grants to the creators of the best Telegram bots. Today we selected five bots for the first batch of grants, amounting to a total of over <strong>$200,000</strong>.   </p>
+<p>For our first pick of winners, we focused on bots that have already gained massive popularity in some markets. The prize money will help their developers create an even better experience for their existing and future users.</p>
+<h4><a class="anchor" name="botprize-november-2016" href="#botprize-november-2016"><i class="anchor-icon"></i></a>BotPrize: November 2016</h4>
+<p>In this batch, we awarded bots from five very different categories: Photo-editing, Productivity, Games, Dating, and Finance.</p>
+<p><strong>Photo-editing</strong><br><a href="https://telegram.me/icon8bot">@icon8bot</a> – an AI-based bot that allows you to apply great-looking filters to photos using neural networks and machine learning technology. More: <a href="http://icon-ai.com/">icon-ai.com</a></p>
+<p><strong>Productivity</strong><br><a href="https://telegram.me/integram_bot">@integram_bot</a> – a bot that allows you to set up integrations with third-party services for developers such as Trello, Gitlab, Bitbucket, and more. More: <a href="https://integram.org/">integram.com</a></p>
+<p><strong>Games</strong><br><a href="https://telegram.me/werewolfbot">@werewolfbot</a> – a ‘Werewolf Game’ bot for group chats that gained popularity in SE Asia long before we launched our <a href="blog/games.html">gaming platform</a> last month. More: <a href="https://www.tgwerewolf.com/">tgwerewolf.com</a></p>
+<p><strong>Dating</strong><br><a href="https://telegram.me/strangerbot">@strangerbot</a> – a bot that connects two random users to chat anonymously, which gained huge popularity after going viral in Southern Europe. More: <a href="http://strangerbot.com/">strangerbot.com</a></p>
+<p><strong>Finance</strong><br><a href="https://telegram.me/octopocket_bot">@octopocket_bot</a> – a smart-wallet bot that allows users from the EU to transfer money to each other, and is integrated into the ATM system of Spain. More: <a href="https://octopocket.com/">octopocket.com</a></p>
+<hr>
+<p>We will continue awarding creators of great bots throughout this year and the following year in <strong>$200,000</strong> batches.</p>
+<p>Have fun using or building bots!</p>
+<div><br></div>
+
+<p><em>November 11, 2016<br>The Telegram Team</em></p>
+<h4><a class="anchor" name="p-s" href="#p-s"><i class="anchor-icon"></i></a>P.S.</h4>
+<p>Here’s a video demonstrating how <a href="https://telegram.me/icon8bot">@icon8bot</a> works:</p>
+<div class="smartphone_video_player_wrap">
+ <div class="smartphone_video_player_iphone">
+ <video class="smartphone_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)" poster="ZZZ.html"  loop controls muted>
+  <source src="file/811140030/2/SVDZD1H1Wok.1360887.mp4/cdce8db724318f55aa" type="video/mp4">
+ </video>
+ </div>
+</div></div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fbotprize1&amp;text=The%20first%20five%20%23BotPrize%20winners%20just%20got%20more%20than%20%24200%2C000." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="The first five #BotPrize winners just got more than &#036;200,000." data-url="blog/botprize1.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="The first five #BotPrize winners just got more than &#036;200,000." data-url="https://telegram.org/blog/botprize1" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/games.html">Gaming Platform 1.0</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140945/2/thDPn9h1P6M.26237.gif/5420d79aaa35fd47af.gif" class="blog_side_image"/>
+</div>
+
+<p>Last year we launched a <a href="https://core.telegram.org/bots">Bot Platform</a> for Telegram. Free, powerful, and open, it was an instant hit among users and developers. Today we are aiming to push the boundaries further by launching a bot-powered <strong>Gaming Platform</strong> on Telegram. That’s right: you can now use bots to play games in your chats, complete with graphics and sound.</p>
+<div class="smartphone_video_player_wrap">
+ <div class="smartphone_video_player_iphone">
+ <video class="smartphone_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)" poster="ZZZ.html"  loop controls muted>
+  <source src="file/811140153/1/gB7wI2zjrj0.1410621.mp4/06df2101673aabbf29" type="video/mp4">
+ </video>
+ </div>
+</div>
+
+<h3><a class="anchor" name="ready-to-play" href="#ready-to-play"><i class="anchor-icon"></i></a>Ready to Play</h3>
+<p>Hundreds of games are headed your way, but about 30 are ready to be played on Telegram now, most of them published by <a href="https://telegram.me/gamee">@gamee</a>. You can start a game by interacting with their bot directly, or by invoking it from <a href="blog/inline-bots.html">any of your chats</a>. To do that, try typing “@gamee “ in a group and choose a game to start playing with your friends:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140576/1/-CuMDV4IrNE.105071/adab466b20e49a5758.jpg" target="_blank"><img src="file/811140576/1/-CuMDV4IrNE.105071/adab466b20e49a5758.jpg" title="Select a game" /></a>
+  <p>Select a game</p>
+</div>
+
+<p>If you spot a great game on Telegram, you can challenge your friends from other chats by sharing the game with them. </p>
+<div class="blog_image_wrap">
+  <a href="file/811140035/2/cIULSr61vi4.78261/127282e0bbd66ce3a9.jpg" target="_blank"><img src="file/811140035/2/cIULSr61vi4.78261/127282e0bbd66ce3a9.jpg" title="Challenge your friends" /></a>
+  <p>Challenge your friends</p>
+</div>
+
+<h3><a class="anchor" name="better-with-friends" href="#better-with-friends"><i class="anchor-icon"></i></a>Better with Friends</h3>
+<p>The best part of the Telegram Gaming Platform is the competition across all your existing chats. We save <strong>high scores</strong> for every game played in every chat, and you can instantly check out how you and your friends are doing against each other. Every time there’s a new leader in the game, other playing members of the chat are notified that they need to step it up. </p>
+<div class="blog_2images_wrap">
+  <div class="blog_image_wrap">
+    <a href="file/811140426/1/ZCw3vu_v8s0.109692/04efd9e88644939a4f.jpg" target="_blank"><img src="file/811140426/1/ZCw3vu_v8s0.109692/04efd9e88644939a4f.jpg" title="YYY"/></a>
+    <p>In-game high scores</p>
+  </div>
+  <div class="blog_image_wrap">
+    <a href="file/811140306/1/dkciuEDbpxU.193188/8a0a21b6e9d111be4c.jpg" target="_blank"><img src="file/811140306/1/dkciuEDbpxU.193188/8a0a21b6e9d111be4c.jpg" title="YYY"/></a>
+    <p>New high score in chat</p>  </div>
+</div>
+
+<h3><a class="anchor" name="easy-to-build" href="#easy-to-build"><i class="anchor-icon"></i></a>Easy to Build</h3>
+<p>Building games for Telegram is easy (check out the <a href="https://core.telegram.org/bots/api#games">API</a>). Here’s <strong>MathBattle</strong>, a game that took our developer only 3 hours to build. You can launch it from any chat by typing <a href="https://telegram.me/gamebot">@gamebot</a> and choosing Math Battle:</p>
+<div class="smartphone_video_player_wrap">
+ <div class="smartphone_video_player_iphone">
+ <video class="smartphone_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)" poster="ZZZ.html"  loop controls muted>
+  <source src="file/811140234/1/18njZcUlq5M.357062.mp4/09572569b4738fe2d8" type="video/mp4">
+ </video>
+ </div>
+</div>
+
+<p>This is <strong>Corsairs</strong>, a demo game that took its dev just 5 hours to build and set up. That includes sound, graphics and animations:</p>
+<div class="smartphone_video_player_wrap">
+ <div class="smartphone_video_player_iphone">
+ <video class="smartphone_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)" poster="ZZZ.html"  loop controls muted>
+  <source src="file/811140027/2/Hdhk2QEXGnA.611796.mp4/ecb907590f316596a8" type="video/mp4">
+ </video>
+ </div>
+</div>
+
+<p>While these demos look basic, Telegram games can be anything from simple arcades and puzzles to multiplayer 3D-shooters and real-time strategy games. The underlying technology is <strong>HTML5</strong>, so games are loaded on-demand as needed, just like ordinary webpages. Games will work on iPhones 4 and newer and on Android 4.4 devices and newer. Note that your friends will need <strong>Telegram 3.13</strong> or higher to play.</p>
+<p>If you are a developer, take a look at our <a href="https://core.telegram.org/bots/games">Introduction to Games</a>. Also, feel free to subscribe to our official <a href="https://telegram.me/botnews">@BotNews</a> channel to stay up to date on platform news.</p>
+<h3><a class="anchor" name="no-added-calories" href="#no-added-calories"><i class="anchor-icon"></i></a>No Added Calories</h3>
+<p>We know you love Telegram because it’s lean and efficient. This is why the new Gaming Platform requires <strong>0 bytes</strong> of disk space and won’t add a single byte to the size of our apps. The only thing we&#39;re adding today is countless more fun moments in your chats.</p>
+<div><br></div>
+
+<p>And now let&#39;s see how high you can score.</p>
+<div><br></div>
+
+<p><em>October 3, 2016<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fgames&amp;text=The%20first%20five%20%23BotPrize%20winners%20just%20got%20more%20than%20%24200%2C000." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="The first five #BotPrize winners just got more than &#036;200,000." data-url="blog/games.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="The first five #BotPrize winners just got more than &#036;200,000." data-url="https://telegram.org/blog/games" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div>  <nav class="pager_wrap" aria-label="...">
+    <ul class="pager">
+      <li class="previous"><a href="blogd48d.html?offset=30"><span aria-hidden="true">&larr;</span> Newer</a></li>
+      <li class="next"><a href="bloge164.html?offset=50">Older <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+  </nav>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer_wrap">
+  <div class="footer_columns_wrap clearfix footer_desktop">
+    <div class="footer_column footer_column_telegram">
+      <h5>Telegram</h5>
+      <div class="footer_telegram_description"></div>
+      Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+    </div>
+
+    <div class="footer_column">
+      <h5><a href="faq.html">About</a></h5>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="apps.html#mobile-apps">Mobile Apps</a></h5>
+      <ul>
+        <li><a href="https://itunes.apple.com/app/telegram-messenger/id686449807">iPhone/iPad</a></li>
+        <li><a href="dl/android.html">Android</a></li>
+        <li><a href="https://www.microsoft.com/store/apps/9WZDNCRDZHS0">Windows Phone</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="apps.html#desktop-apps">Desktop Apps</a></h5>
+      <ul>
+        <li><a href="http://desktop.telegram.org/">PC/Mac/Linux</a></li>
+        <li><a href="http://macos.telegram.org/">macOS</a></li>
+        <li><a href="https://web.telegram.org/">Web-browser</a></li>
+      </ul>
+    </div>
+    <div class="footer_column footer_column_platform">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+      <ul>
+        <li><a href="http://core.telegram.org/api">API</a></li>
+        <li><a href="http://translations.telegram.org/">Translations</a></li>
+        <li><a href="http://instantview.telegram.org/">Instant View</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_columns_wrap clearfix footer_mobile">
+    <div class="footer_column">
+      <h5><a href="faq.html">About</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="blog.html">Blog</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="apps.html">Apps</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)">Twitter</a></h5>
+    </div>
+  </div>
+</div>
+    <script src="js/main02e7.js?27"></script>
+    
+    
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45099287-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');twitterCustomShareInit();
+blogSideImageInit();
+backToTopInit();
+</script>
+  </body>
+
+<!-- Mirrored from telegram.org/blog?offset=40 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:15:10 GMT -->
+</html>
+<!-- page generated in 36.53ms -->

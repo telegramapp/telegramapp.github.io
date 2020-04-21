@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from telegram.org/blog?offset=10 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:14:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Telegram Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Telegram Blog">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Telegram">
+    <meta property="og:description" content="">
+    
+    <meta property="fb:app_id" content="254098051407226">
+    <meta property="vk:app_id" content="3782569">
+    <meta name="apple-itunes-app" content="app-id=686449807">
+    <meta name="telegram:channel" content="@telegram">
+    
+    <link rel="shortcut icon" href="faviconeccb.ico?3" type="image/x-icon" />
+<link rel="mask-icon" href="img/website_icon.svg" color="#299ed8">
+    <link href="css/bootstrap.mineccb.css?3" rel="stylesheet">
+    <link href="css/bootstrap-extrac81e.css?2" rel="stylesheet">
+    <link href="css/telegramcede.css?183" rel="stylesheet" media="screen">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <div class="tl_page_wrap">
+      <div class="tl_page_head navbar navbar-static-top navbar navbar-tg">
+        <div class="navbar-inner">
+          <div class="container clearfix">
+            <ul class="nav navbar-nav navbar-right"><li class="navbar-twitter"><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)"><i class="icon icon-twitter"></i><span class="hidden-xs"> Twitter</span></a></li></ul>
+<ul class="nav navbar-nav">
+  <li class=""><a href="index.html">Home</a></li>
+  <li class=""><a href="faq.html">FAQ</a></li>
+  <li class=""><a href="apps.html">Apps</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/api">API</a></li>
+  <li class="hidden-xs "><a href="http://core.telegram.org/mtproto">Protocol</a></li>
+</ul>
+          </div>
+        </div>
+      </div>
+      <div class="container clearfix tl_page_container ">
+        <div class="tl_page">
+          <div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/contacts-local-groups.html">Location-Based Chats, Adding Contacts Without Phone Numbers and More</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140595/1a00/Wx4FDuEvl0Q.27470.gif/144463428fd20fe032.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/464001499/1/z7yRs5uf-PE.228615/d9f270f7c0c8973075.jpg" target="_blank"><img src="file/464001958/1/Z3JgyvfqD-c.82175/1742eb11e697750e9a.jpg" srcset="/file/464001499/1/z7yRs5uf-PE.228615/d9f270f7c0c8973075, 1200w" title="Fun fact: You won't find any funny alt texts in Telegram blog posts before this one – except on one page. And no, I'm not telling you which one." alt="Telegram 5.8: Adding Contacts Without Phone Numbers, Location-Based Chats and More"/></a>
+</div>
+
+<p>In the previous update, we improved <a href="blog/privacy-discussions-web-bots.html">privacy settings</a> and added a way for you to <a href="blog/privacy-discussions-web-bots.html#who-can-see-my-phone-number">control</a> who can see your phone number. Today we&#39;re making it easier to <strong>exchange contact info</strong> on Telegram.</p>
+<p>All new chats now have an <strong>Add to Contacts</strong> button at the top. This allows you to quickly add <strong>anyone</strong> who messages you to your Telegram contacts, even if you don&#39;t know their phone number yet.</p>
+<div class="blog_image_wrap blog_medium_image_wrap">
+  <a href="file/464001631/1/F-_-vAcONP4.106296/d1a4c5f258a80758de.jpg" target="_blank"><img src="file/464001725/1/sLl1wtZPYSs.24847/9d1d386cb887df542a.jpg" title="Uniform buttons in any new chat" alt="Add/Block Buttons in a Chat" srcset="/file/464001631/1/F-_-vAcONP4.106296/d1a4c5f258a80758de , 2x" /></a>
+</div>
+
+<p>If you&#39;d prefer they disappeared instead, the <strong>Block</strong> button is right next door.</p>
+<h3><a class="anchor" name="add-people-nearby" href="#add-people-nearby"><i class="anchor-icon"></i></a>Add People Nearby</h3>
+<p>Ever scrambled for business cards at a beach party? Or dropped somebody&#39;s phone into the pool in a “let me type in my number for you” moment? Worry no more.</p>
+<p>Simply open <em>Contacts &gt; Add People Nearby</em> to quickly <strong>exchange contact info</strong> with Telegram users who are <strong>standing next to you</strong> (and also have this section open).</p>
+<div class="blog_video_player_wrap" style="max-width: 400px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/464001736/1/v8cwF2n-V5s.75257/0d759efd60ac818e6c.jpg" style="max-width: 400px;" title="Adding contacts from 'People Nearby'" alt="Adding contacts from 'People Nearby'">
+  <source src="file/464001141/1/rbG5hZbM4CA.4994584.mp4/47489ee464c7c2785d" type="video/mp4">
+ </video>
+</div>
+
+<p>This feature comes in especially handy when several people meet to perform the take-my-number dance. Now you can catch all your pokémon in just a few taps.</p>
+<h3><a class="anchor" name="location-based-chats" href="#location-based-chats"><i class="anchor-icon"></i></a>Location-Based Chats</h3>
+<p>Speaking of pokémon, the new People Nearby section also shows <strong>Groups Nearby</strong> –  location-based group chats open for anyone around to join.</p>
+<div class="blog_video_player_wrap" style="max-width: 400px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/464001221/2/iBxGpksIOOI.60606/1bd0e8d6ef9e0ef9f0.jpg" style="max-width: 400px;" title="Groups nearby" alt="Joining a group nearby">
+  <source src="file/464001046/1/kdljqCmHZjE.4619221.mp4/362e5cdc55ccb55eab" type="video/mp4">
+ </video>
+</div>
+
+<p>Tap <strong>Create a Local Group</strong> to unite your dormitory or apartment building, and maybe you can get Todd in 2C to finally turn his music down.</p>
+<div class="blog_image_wrap blog_medium_image_wrap">
+  <a href="file/464001076/1/vrMtKlSsO0U.131149/95ef86596728e6202f.jpg" target="_blank"><img src="file/464001576/1/Mek_KLIbkT8.43709/a88d03ef2f857a6d30.jpg" title="Location-based group" alt="Location-based group" srcset="/file/464001076/1/vrMtKlSsO0U.131149/95ef86596728e6202f , 2x" /></a>
+</div>
+
+<p>This update opens up a new world of location-based group chats for anything from conferences, to festivals, to stadiums, to campuses, to chatting with people hanging out in the same cafe.</p>
+<h3><a class="anchor" name="transfer-group-chats" href="#transfer-group-chats"><i class="anchor-icon"></i></a>Transfer Group Chats</h3>
+<p>If you ever get tired of being the host of your group, you can pass the burden on to another administrator. Telegram apps now support transferring ownership rights from any <strong>groups</strong> and <strong>channels</strong> to other users.</p>
+<p>Grant full admin rights to your Chosen One to see the <strong>Transfer Ownership</strong> button.</p>
+<div class="blog_image_wrap blog_medium_image_wrap">
+  <a href="file/464001145/1/hlhoTGVKSV4.163774/a9a2de2dcf1b1ecbed.jpg" target="_blank"><img src="file/464001800/1/aevoBVuYzHQ.46119/b80aed7d5e98a3db65.jpg" title="Transfer group ownership" alt="Transfer group ownership" srcset="/file/464001145/1/hlhoTGVKSV4.163774/a9a2de2dcf1b1ecbed , 2x" /></a>
+</div>
+
+<p>Whether your watch has ended, or you have some business to attend to in King&#39;s Landing, passing the torch is a simple, two-tap affair.</p>
+<h3><a class="anchor" name="enhanced-notification-exceptions" href="#enhanced-notification-exceptions"><i class="anchor-icon"></i></a>Enhanced Notification Exceptions</h3>
+<p>Notification Exceptions just got more powerful. You can now toggle <strong>message previews</strong> for specific chats. If you have many exceptions, use <strong>Search</strong> to find the right chat — or <strong>‘Delete All’</strong> to get back to square one instantly.</p>
+<div class="blog_image_wrap blog_medium_image_wrap">
+  <a href="file/464001033/1/cNWgfg8BQFI.105520/5abd60a8dd21e7f332.jpg" target="_blank"><img src="file/464001453/1/eWFOg1nG87E.30515/d7cec475ab4afa6c6a.jpg" title="Notification exceptions" alt="Notification exceptions" srcset="/file/464001033/1/cNWgfg8BQFI.105520/5abd60a8dd21e7f332 , 2x" /></a>
+</div>
+
+<h3><a class="anchor" name="siri-shortcuts" href="#siri-shortcuts"><i class="anchor-icon"></i></a>Siri Shortcuts</h3>
+<p>Owners of iOS devices can now use <a href="https://support.apple.com/en-us/HT209055">Siri shortcuts</a> to open chats with people. No hands just got no-handsomer.</p>
+<div class="blog_image_wrap blog_medium_image_wrap">
+  <a href="file/464001139/1/-2FI3kk9x8Y.76883/a31f4a94fafbc73edb.jpg" target="_blank"><img src="file/464001256/1/SbG0VqNdXcg.23363/81a41971205adc1ced.jpg" title="Siri" alt="Siri" srcset="/file/464001139/1/-2FI3kk9x8Y.76883/a31f4a94fafbc73edb , 2x" /></a>
+</div>
+
+<h3><a class="anchor" name="theme-picker-and-icon-style" href="#theme-picker-and-icon-style"><i class="anchor-icon"></i></a>Theme Picker and Icon style</h3>
+<p>We&#39;ve also revamped the <strong>Appearance</strong> settings on iOS so that it&#39;s easier to see what the different themes will look like even before you apply them.</p>
+<div class="blog_image_wrap blog_medium_image_wrap">
+  <a href="file/464001041/1/8z8mTlhCNGU.131534/02bafeae86c0f1512d.jpg" target="_blank"><img src="file/464001227/1/2tHv2H5_-Gc.37870/2b6c69bd523e8a04e6.jpg" title="New theme picker on iOS" alt="New theme picker on iOS" srcset="/file/464001041/1/8z8mTlhCNGU.131534/02bafeae86c0f1512d , 2x" /></a>
+</div>
+
+<p>A while back, the <a href="blog/telegram-x.html">Telegram X</a> app for <strong>iOS</strong> was promoted, becoming the <strong>official</strong> Telegram, and its previous shell was removed from the store. If you are still using it for some reason, this is a good time to switch — ol&#39; Telegram X is now three versions behind the main branch.</p>
+<p>Some users told us they didn&#39;t want to switch because they liked the Telegram X icon better. So this update adds a way for your iOS app icon to get back in black:</p>
+<div class="blog_image_wrap blog_medium_image_wrap">
+  <a href="file/464001949/1/Qzm6fwYz9aA.48175/1a30dc952e47878272.jpg" target="_blank"><img src="file/464001305/1/A_YhtWAGEPY.15915/b22b4c1d982a105d28.jpg" title="Pick your poison" alt="Pick your poison" srcset="/file/464001949/1/Qzm6fwYz9aA.48175/1a30dc952e47878272 , 2x" /></a>
+</div>
+
+<p>By the way, Telegram X for <strong>Android</strong> is still there and is not going anywhere for now. If you&#39;re looking for an alternative interface, feel free to <a href="https://play.google.com/store/apps/details?id=org.thunderdog.challegram&amp;hl=en">give it a try</a>.</p>
+<div><br></div>
+
+<p><em>June 23, 2019<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fcontacts-local-groups&amp;text=Adding%20contacts%20made%20easier%2C%20location-based%20group%20chats%2C%20transfer%20group%20ownership%20and%20more." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Adding contacts made easier, location-based group chats, transfer group ownership and more." data-url="blog/contacts-local-groups.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Adding contacts made easier, location-based group chats, transfer group ownership and more." data-url="https://telegram.org/blog/contacts-local-groups" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/privacy-discussions-web-bots.html">Focused Privacy, Discussion Groups, Seamless Web Bots and More</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="img/tl_card_wecandoit.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140685/1653/yj8YWqoEbqc.197384/7ec377368b90e7a84f.jpg" target="_blank"><img src="file/811140703/172f/nGBKB_F8S80.70089/884b94a66e3eb7c996.jpg" srcset="/file/811140685/1653/yj8YWqoEbqc.197384/7ec377368b90e7a84f, 1200w" title="Quickly readjust privacy settings based on your existing group chats"/></a>
+</div>
+
+<p>Telegram is about privacy. In <strong>2014</strong> we pioneered <a href="blog/privacy-revolution.html">granular privacy settings</a> in messaging. Today we are making them even more flexible with <strong>exceptions for group chats</strong>.</p>
+<p>From now on, you can make something visible for all your classmates in one group chat and keep it private from, say, all your colleagues in another – with just two taps:</p>
+<div class="blog_video_player_wrap" style="max-width: 400px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140502/16e0/WtuAJfEYqro.51545/18a85ecd2c347b128b.jpg" style="max-width: 400px;" title="Adding groups as exception" alt="Video showing how groups can be added to exceptions in privacy settings">
+  <source src="file/811140404/1a7e/1um7KoHknGA.2775886.mp4/4611289caec9f8f3e4" type="video/mp4">
+ </video>
+</div>
+
+<p>Settings will <strong>adjust automatically</strong> as people join and leave the groups. So when your half-brother unexpectedly gets a job as a data broker, you&#39;ll just need to kick him out of one group to update all your settings.</p>
+<h4><a class="anchor" name="who-can-see-my-phone-number" href="#who-can-see-my-phone-number"><i class="anchor-icon"></i></a>Who can see my phone number?</h4>
+<p>On Telegram, you can send messages in private chats and groups without making your phone number visible. But there may be cases when you want to make your number known (e.g. to all your coworkers), so we added a new dedicated privacy control – <strong>Who Can See My Number</strong>.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140303/17a5/B3GM4vNHvcE.117067/53ba4e3d01ddd104b5.jpg" target="_blank"><img src="file/811140308/1637/tt_nKf_yacQ.28933/5b267eaf89edcd5f4e.jpg" title="Phone number settings are at the top of the list" alt="A screenshot of the redesigned Privacy & Security settings screen" srcset="/file/811140303/17a5/B3GM4vNHvcE.117067/53ba4e3d01ddd104b5 , 2x" /></a>
+  <p>Redesigned privacy settings on iOS</p>
+</div>
+
+
+<h4><a class="anchor" name="meet-seamless-web-bots" href="#meet-seamless-web-bots"><i class="anchor-icon"></i></a>Meet Seamless Web Bots</h4>
+<p>We&#39;ve made it easier to <strong>integrate bots with web services</strong>. Bots can now help you <strong>log in</strong> with your Telegram account on a website when you open a link. If you allow them to, you&#39;ll be logged in by the time the page loads in the browser:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140015/1734/8VZFkwWXalM.97872/6127fa62d8a0bf2b3c.jpg" target="_blank"><img src="file/811140909/1631/20k1Z53eiyY.23995/c541e89b74253623d9.jpg" title="Confirm authorization when opening a link" alt="A confirmation dialog that offers to open a link and optionally authorize on the website" srcset="/file/811140015/1734/8VZFkwWXalM.97872/6127fa62d8a0bf2b3c , 2x" /></a>
+</div>
+
+<p>While this is purely optional, it opens the door for a vast variety of new bots. To try out this seamless authorization, press the ‘comments’ button under <a href="https://t.me/discussthis/2">this post</a>.</p>
+<p>You can also make our sample <a href="https://t.me/discussbot">@discussbot</a> an admin in any of your broadcast channels to get a comments button under the posts you publish. The comments button opens a website where you are already logged in and ready to leave a comment. The bot will notify you if someone replies to what you wrote there.</p>
+<p><strong>Anyone</strong> can create similar bots to connect their existing services to Telegram on the fly. Integrating all kinds of social, gaming, productivity, dating or e-commerce services into your channels is now a breeze.</p>
+<h4><a class="anchor" name="broadcasts-meet-group-chats" href="#broadcasts-meet-group-chats"><i class="anchor-icon"></i></a>Broadcasts meet Group Chats</h4>
+<p>Telegram channels are a tool for broadcasting your thoughts to unlimited audiences. Telegram group chats offer a democratic way for communities of up to <strong>200,000</strong> members to discuss things.</p>
+<p>Ever since we launched channels and groups, users have been asking us to add <strong>discussions to channels</strong> and <strong>announcements to groups</strong>. With this update, admins can add a group chat to their channel to serve as a discussion board:</p>
+<div class="blog_video_player_wrap" style="max-width: 400px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140436/1cc1/7ILPfV4TGOk.35654/15d92ea535b5effbc4.jpg" style="max-width: 400px;" title="Setting up a discussion group" alt="Video showing how to set up a discussion group for a channel">
+  <source src="file/811140131/15e5/c7pM8Kkemho.1946597.mp4/2e2cd62cd3e68ec64d" type="video/mp4">
+ </video>
+</div>
+
+<p>Subscribers will see a <strong>‘Discuss’</strong> link on the bottom panel, and each new post from the channel will be automatically forwarded to and <strong>pinned</strong> in the discussion group.</p>
+<div class="blog_video_player_wrap" style="max-width: 400px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140693/19c8/nxMsWY439p8.90289/6757155d5d9248e1af.jpg" style="max-width: 400px;" title="'Discuss' button and counter in a channel" alt="Video showing a 'Discuss' button in a channel, as seen by a subscriber">
+  <source src="file/811140380/18b3/Zxa3BpkKFww.2444629.mp4/e2bf14608afc9598e9" type="video/mp4">
+ </video>
+</div>
+
+<h4><a class="anchor" name="view-public-channels" href="#view-public-channels"><i class="anchor-icon"></i></a>View public channels</h4>
+<p>Speaking of channels, you can now view <strong>any public channel</strong> from the web – even if you aren‘t logged in to Telegram. The same also goes for those retro people who don’t have a Telegram account at all. Yet.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140854/1d7a/oUo2RvZQhpA.179466/3af8447ee3166bd490.jpg" target="_blank"><img src="file/811140394/18f2/R7wmWr5znlQ.22660/8320ab77949ef72ecb.jpg" title="Any public channel can now be viewed like this" alt="A public channel, as seen from the web" srcset="/file/811140854/1d7a/oUo2RvZQhpA.179466/3af8447ee3166bd490 , 2x" /></a>
+</div>
+
+<p>Simply open the channel link in a browser and select “Preview channel” to see something like this: <a href="https://t.me/s/telegram">t.me/s/telegram</a></p>
+<h4><a class="anchor" name="scam-alerts" href="#scam-alerts"><i class="anchor-icon"></i></a>Scam Alerts</h4>
+<p>Telegram apps will now show a <strong>scam</strong> label for suspicious accounts.</p>
+<div class="blog_image_wrap">
+  <a href="http://telegra.ph/Why-WhatsApp-Will-Never-Be-Secure-05-15" target="_blank"><img src="file/811140902/1944/I9_XkMaFa2s.7377/0177b2d25c2a905c12.jpg" title="Scam label" alt="Chat with a scammer" srcset="/file/811140225/1608/NEQ7qFcGz7A.41298/8192624d69954ef751 , 2x" /></a>
+</div> 
+
+<h4><a class="anchor" name="ios-goodies" href="#ios-goodies"><i class="anchor-icon"></i></a>iOS Goodies</h4>
+<p>In other news, Telegram 5.7 for iOS introduces <strong>thumbnails for PDF</strong> files. Keep in mind that Telegram lets you share files of any type, up to <strong>1,5GB</strong> each in size (so you can telegram a PDF payload worthy of Elon&#39;s rockets).</p>
+<div class="blog_image_wrap">
+  <a href="file/811140725/1950/gOBjCn0ArJ0.71145/f51c5479e0cb3bb9dc.jpg" target="_blank"><img src="file/811140757/17cd/lfvsIdsuPH0.7902/3a793d6fb3b756b15b.jpg" title="PDFs get thumbnails" alt="PDF file with a thumbnail" srcset="/file/811140725/1950/gOBjCn0ArJ0.71145/f51c5479e0cb3bb9dc , 2x" /></a>
+</div>
+
+<p>Telegram for iOS also catches up with the rest of our apps in terms of <strong>text links</strong>. You can now make any text a <a href="https://bit.ly/18gECvy">link</a> to a website, keeping all the cords under the carpet.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140123/1b46/4fiNCd0Im7w.41855/af8b7c20aa0b915540.jpg" target="_blank"><img src="file/811140037/17e0/iDfax0dwFGo.8219/e33a2d2f6f076a2155.jpg" title="Creating a text link on iOS" alt="Creating a text link on iOS" srcset="/file/811140123/1b46/4fiNCd0Im7w.41855/af8b7c20aa0b915540 , 2x" /></a>
+</div>
+
+<p>Mind that people will get a warning about where exactly the link leads when they open it. (Hint: use URL shorteners if you want to rick-roll people).</p>
+<h4><a class="anchor" name="android-delights" href="#android-delights"><i class="anchor-icon"></i></a>Android Delights</h4>
+<p>As for Android, we&#39;ve redesigned the majority of confirmation dialogs in the app, and improved the <strong>design</strong> for message search and adding people to groups. Additionally, the app got a new <strong>theme switcher</strong> in <em>Chat Settings</em>.</p>
+<div class="blog_video_player_wrap" style="max-width: 400px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140437/1805/5MutqOxvf3Q.46129/19228a1a7473a2a3fe.jpg" style="max-width: 400px;" title="Changing themes on Android" alt="Changing themes on Android">
+  <source src="file/811140502/16e1/yxE0opr-UAI.1621674.mp4/aa5945d1b1b9ea0920" type="video/mp4">
+ </video>
+</div>
+
+<p>Have fun with all that and stay tuned for our next updates.</p>
+<div><br></div>
+
+<p><em>May 31, 2019<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fprivacy-discussions-web-bots&amp;text=Focused%20Privacy%2C%20Discussions%20for%20Broadcasts%2C%20Seamless%20Web%20Bots%20and%20More%20in%20Telegram%205.7" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Focused Privacy, Discussions for Broadcasts, Seamless Web Bots and More in Telegram 5.7" data-url="blog/privacy-discussions-web-bots.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Focused Privacy, Discussions for Broadcasts, Seamless Web Bots and More in Telegram 5.7" data-url="https://telegram.org/blog/privacy-discussions-web-bots" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/archive-and-new-design.html">Archived Chats, a New Design and More</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140098/1753/kQsujJ1Zd-I.19823.gif/f266929ce7645e867c.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140103/1960/MK9TMoDwLYc.192212/d7f2c25a358f44cb84.jpg" target="_blank"><img src="file/811140150/19bf/o1qQWqeafv4.67487/bbd6857252ab77b65e.jpg" srcset="/file/811140103/1960/MK9TMoDwLYc.192212/d7f2c25a358f44cb84, 1200w" title="Hey, this isn't XKCD. Why check the titles?" alt="Introducing archived chats, a new design and more"/></a>
+</div>
+
+<p>Today&#39;s update gives you the tools to sort your messages with <strong>archived chats</strong>, a <strong>new design</strong> on Android and a handful of other nifty features to make the most of your messenger. </p>
+<h3><a class="anchor" name="everything-in-its-place" href="#everything-in-its-place"><i class="anchor-icon"></i></a>Everything in its place</h3>
+<p>Introducing <strong>archived chats</strong>, the new tool for spring cleaning in your chat list. Sort your active and inactive chats, separate personal stuff from work or banish annoying contacts to your archive for some spectacular revenge!</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140089/1a1a/El2hG5wVR34.46491/7dc806e6a17f4bf077.jpg" style="max-width: 480px;" title="Archiving chats" alt="Archiving chats">
+  <source src="file/811140993/1890/r8DEDj-9j1c.2142992.mp4/c8b190a64437af3f7b" type="video/mp4">
+ </video>
+</div>
+
+<p>Swipe left on a chat to transfer it to your <strong>archived chats</strong> folder. When an archived chat gets a notification, it will pop out of the folder and back into your chat list. Muted chats will stay archived forever.</p>
+<p>You can <strong>hide the archive</strong> by swiping left on it. See it again by dragging the screen down. </p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140735/145c/yN2TOfeBZZU.35046/810940111554f9b7e1.jpg" style="max-width: 480px;" title="Hiding the archive" alt="Hiding the archive">
+  <source src="file/811140203/17fc/xhiuz7TnrTo.2459490.mp4/f0d256be91bb6c7a41" type="video/mp4">
+ </video>
+</div>
+
+<p><strong>Pin</strong> an <strong>unlimited</strong> number of chats in your archive to keep your messages in the order you want. When chats pop out of your archive with a notification, you can archive them again to return them to their original place within the folder. </p>
+<div class="blog_image_wrap">
+  <a href="file/811140351/1882/wW6_7lLTu9A.147504/e4f91eae6908ece40f.jpg" target="_blank"><img src="file/811140621/13b1/GLLXK6bcMo8.23835/82355beab98b49e9bf.jpg" title="Pinned chats in the archive" alt="Pinned chats in the archive" srcset="/file/811140351/1882/wW6_7lLTu9A.147504/e4f91eae6908ece40f , 2x" /></a>
+</div>
+
+<h3><a class="anchor" name="bulk-actions-for-a-busy-chat-list" href="#bulk-actions-for-a-busy-chat-list"><i class="anchor-icon"></i></a>Bulk actions for a busy chat list</h3>
+<p>Time is money and money buys cat food, so don&#39;t waste time and make the most of the bulk actions in your chat list, now also available on Telegram for <strong>Android</strong>. Long tap on a chat to open the new menu where you can <strong>select multiple chats</strong> and then pin, mute, archive or delete them, all faster than ever before.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140316/1638/0r3Ur-4DzTg.54159/ce56916b26cd0becb2.jpg" style="max-width: 480px;" title="Bulk actions in chat list" alt="Bulk actions in chat list">
+  <source src="file/811140097/1e0b/X2LNm3RO77w.2956936.mp4/464532ca9fb608e9d2" type="video/mp4">
+ </video>
+</div>
+
+<h3><a class="anchor" name="android-39s-new-clothes" href="#android-39s-new-clothes"><i class="anchor-icon"></i></a>Android&#39;s new clothes</h3>
+<p>Telegram for Android got a lot slicker, starting with the app&#39;s <strong>new icon</strong> and down to every menu in the app sporting a <strong>new design</strong>.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140811/1892/BJRz_GV8n-s.26548/57bd478d7765d8ab07.jpg" target="_blank"><img src="file/811140008/16aa/vmZ9TDLEbgs.6072/5826637c6758dc2939.jpg" title="Telegram for Android's new icon" alt="Telegram for Android's new icon" srcset="/file/811140811/1892/BJRz_GV8n-s.26548/57bd478d7765d8ab07 , 2x" /></a>
+  <p>New app icon</p>
+</div>
+
+<div class="blog_image_wrap">
+  <a href="file/811140971/1782/uIZr_2a4WGw.128500/0c544cb2d199871f66.jpg" target="_blank"><img src="file/811140715/19fc/Z_xT6lmtYtk.19195/9e22ac19cec748fb81.jpg" title="Redesigned menus" alt="Redesigned menus" srcset="/file/811140971/1782/uIZr_2a4WGw.128500/0c544cb2d199871f66 , 2x" /></a>
+  <p>Slick new menus</p>
+</div>
+
+
+<p><strong>Selecting messages</strong> in chats is now not only more stylish but also more functional – note the new <strong>quick forwarding button</strong> which appears right under your thumb:</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140812/15f2/GyG3C8VT_mQ.74542/1bbb8cf4e6e6da42ac.jpg" style="max-width: 480px;" title="New design when selecting messages" alt="New design when selecting messages">
+  <source src="file/811140635/1616/TTE-TUaPE2Q.4844372.mp4/07d6de110cb23e2970" type="video/mp4">
+ </video>
+</div>
+
+<h3><a class="anchor" name="more-info-at-a-glance" href="#more-info-at-a-glance"><i class="anchor-icon"></i></a>More info at a glance</h3>
+<p>With the <strong>expanded chat list</strong>, you can see more text from the messages in your list. Simply select <strong>Three lines</strong> in the <em>Chat Settings</em> menu to see up to three lines per chat instead of the usual two. </p>
+<div class="blog_image_wrap">
+  <a href="file/811140401/1525/4y11MbCfgzw.39161/a583aa223554cf652e.jpg" target="_blank"><img src="file/811140327/2404/pnoYP7UFqMs.7924/46ab5a8fc9afc16ef4.jpg" title="Chat list settings" alt="Chat settings, choose between two or three lines per chat" srcset="/file/811140401/1525/4y11MbCfgzw.39161/a583aa223554cf652e , 2x" /></a>
+  <p>Chat list view settings</p>
+</div>
+
+<h3><a class="anchor" name="share-and-share-a-lot" href="#share-and-share-a-lot"><i class="anchor-icon"></i></a>Share and share a lot</h3>
+<p>Want to share a message far and wide? Pull up the new streamlined <strong>sharing menu</strong> to cover the entire screen and select your whole gang. And don‘t fret if you’re short on words, the comment field now supports <strong>emoji</strong>.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140077/16d2/_eK0f72qgyw.197263/e50be872c5080b8a1d.jpg" target="_blank"><img src="file/811140579/1ab7/6qQkd_vCVG0.30887/b042ef4e16fa4e0673.jpg" title="Sharing menu" alt="The new sharing menu with online badges and emoji support" srcset="/file/811140077/16d2/_eK0f72qgyw.197263/e50be872c5080b8a1d , 2x" /></a>
+  <p>New sharing menu</p>
+</div>
+
+<p>The new design also makes it easier to share <strong>sticker packs</strong>.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140126/15df/MWt-pGh6HSA.254766/5a1cd3a15f11468bec.jpg" target="_blank"><img src="file/811140909/1630/eguI62CaLTI.35674/2e188fab566f6d737d.jpg" title="Preview sticker pack" alt="Sticker pack viewer with the new sharing buttons" srcset="/file/811140126/15df/MWt-pGh6HSA.254766/5a1cd3a15f11468bec , 2x" /></a>
+  <p>New sticker pack viewer</p>
+</div>
+
+<h3><a class="anchor" name="you-shall-not-pass" href="#you-shall-not-pass"><i class="anchor-icon"></i></a>You shall not pass</h3>
+<p>Meanwhile on iOS, <strong>passcode</strong> settings have been made more stylish and more robust to accommodate <strong>6-digit codes</strong>, in addition to the previous 4-digit and custom alphanumeric options. Keep it secret, keep it safe <img class="emoji" src="img/emoji/40/F09F9492.png" width="20" height="20" alt="🔒" />.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140517/1771/fx2pa8_jexU.44923/18853af1dfb77b3905.jpg" style="max-width: 480px;" title="Updated passcode" alt="Updated passcode on iOS with stylish animations">
+  <source src="file/811140647/15ed/Yo27z2Pnjhg.2556288.mp4/6c111073cc08fa940b" type="video/mp4">
+ </video>
+</div>
+
+
+<p>Another new feature on iOS allows <strong>clearing</strong> your <strong>recently used stickers</strong> so nobody can prove how much you love sending funny dog stickers. </p>
+<div class="blog_image_wrap">
+  <a href="file/811140054/187d/MW-mRm-C-Fc.91038/833b96c8f3ca777f98.jpg" target="_blank"><img src="file/811140925/1a9f/cA_PHTvMT5g.14695/485b5abf8dd70033a7.jpg" title="Clear recent stickers" alt="Clear recent stickers on iOS" srcset="/file/811140054/187d/MW-mRm-C-Fc.91038/833b96c8f3ca777f98 , 2x" /></a>
+  <p>Clear recent stickers</p>
+</div>
+
+<p>We also thought that <strong>large emoji</strong> feel more natural without chat bubbles and made them look like little stickers instead. Aren&#39;t they cute?</p>
+<div class="blog_image_wrap">
+  <a href="file/811140003/183a/NmvTFdsuLqI.44544/4cfbf4009337d0614c.jpg" target="_blank"><img src="file/811140495/15c0/p5zsf1qu58c.8669/4a9be32f9f361a1a4e.jpg" title="Clear recent stickers" alt="Clear recent stickers on iOS" srcset="/file/811140003/183a/NmvTFdsuLqI.44544/4cfbf4009337d0614c , 2x" /></a>
+  <p>New look for large emoji</p>
+</div>
+
+<h3><a class="anchor" name="easier-forwarding-links-to-messages-online-badges" href="#easier-forwarding-links-to-messages-online-badges"><i class="anchor-icon"></i></a>Easier forwarding, links to messages, online badges</h3>
+<p>Ever selected the wrong chat when <strong>forwarding a message</strong>? Tap the message snippet above the text box before sending to <strong>change</strong> where the message is forwarded to.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140819/189b/4-IyTv7aC18.57626/7788730c79f51dc3ba.jpg" target="_blank"><img src="file/811140456/1419/M-ZjM_4a4hU.9106/2ff2321c60e2805268.jpg" title="Switch recipient" alt="Switch recipient when forwarding messages" srcset="/file/811140819/189b/4-IyTv7aC18.57626/7788730c79f51dc3ba , 2x" /></a>
+  <p>Switch recipient</p>
+</div>
+
+<p>If you&#39;d rather point to a particular spot in a conversation, you can now <strong>copy links</strong> to messages in <strong>private</strong> groups and channels – just like you could with public messages. Needless to say, links to private chats will only work for members of their respective communities.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140231/18c9/TZne6QZ-0Cw.119730/958e8eb2c23cbf44b0.jpg" target="_blank"><img src="file/811140512/1945/KqBzzljkJSc.17504/bec992fa81eee5d5c2.jpg" title="Links to individual messages" alt="Copy links to individual messages in a private community" srcset="/file/811140231/18c9/TZne6QZ-0Cw.119730/958e8eb2c23cbf44b0 , 2x" /></a>
+  <p>Links to individual messages</p>
+</div>
+
+<p>Last but not least, you can now instantly see who&#39;s <strong>online</strong> from the <strong>chat list</strong> and <strong>sharing menu</strong> to find out who else might be watching cat videos in the middle of the night. </p>
+<div class="blog_image_wrap">
+  <a href="file/811140497/169c/FbX5-9SUhqE.50483/ac6819acd2bbd17f18.jpg" target="_blank"><img src="file/811140760/1678/ViAX26vmj1E.8673/ec9ec89b84c413b840.jpg" title="Online badges in chats" alt="Online badges in chats" srcset="/file/811140497/169c/FbX5-9SUhqE.50483/ac6819acd2bbd17f18 , 2x" /></a>
+</div>
+
+<p>As always, stay tuned for more updates on all our platforms — we look forward to popping back out of your archive with the next version.</p>
+<div><br></div>
+
+<p><em>May 9, 2019<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Farchive-and-new-design&amp;text=Introducing%20archived%20chats%2C%20online%20badges%2C%20Android%27s%20new%20clothes%20and%20more." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Introducing archived chats, online badges, Android&#39;s new clothes and more." data-url="blog/archive-and-new-design.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Introducing archived chats, online badges, Android&#39;s new clothes and more." data-url="https://telegram.org/blog/archive-and-new-design" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/unsend-privacy-emoji.html">Taking Back Our Right to Privacy</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="img/tl_card_private.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140310/182b/ur_j6rtMFec.186986/9b4f0098dd29b1b4db.jpg" target="_blank"><img src="file/811140992/1d9f/HqBlZu_zpp0.66992/53a1a122140d122843.jpg" srcset="/file/811140310/182b/ur_j6rtMFec.186986/9b4f0098dd29b1b4db, 1200w" title="Unsending messages, anonymized forwarding, improved search and VoiceOver/TalkBack support" alt="Unsending messages, anonymized forwarding, improved search and VoiceOver/TalkBack support"/></a>
+</div>
+
+
+<p>For us, your private data is <strong>sacred</strong>. We never use your data to target ads. We never disclose your data to third parties. We store only what is absolutely necessary for Telegram to work. </p>
+<p>In <strong>2013</strong>, we gave millions of people power over their data with end-to-end encryption.</p>
+<p>Today, we are giving hundreds of millions of users <strong>complete control</strong> of any private conversation they have ever had. You can now choose to delete any message you have sent or received from both sides in <strong>any</strong> private chat. The messages will disappear for both you and the other person – without leaving a trace. </p>
+<h3><a class="anchor" name="unsend-anything" href="#unsend-anything"><i class="anchor-icon"></i></a>Unsend Anything</h3>
+<p>The “Unsend” feature we introduced 2 years ago worked only for messages sent by you and only for 48 hours. Now you can “unsend” messages you have <strong>received</strong> as well, and there is <strong>no time limit</strong>. You can also delete any private chat entirely from both your and the other person&#39;s device with just two taps. </p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140695/1947/Mc6JXlUuMPQ.58001/3107f1f4ed0eb44baf.jpg" style="max-width: 480px;" title="Unsend any message" alt="Unsend any message">
+  <source src="file/811140386/137b/JsWWEUuVuKE.867807.mp4/09a0afd95f3285e521" type="video/mp4">
+ </video>
+</div>
+
+<h3><a class="anchor" name="anonymous-forwarding" href="#anonymous-forwarding"><i class="anchor-icon"></i></a>Anonymous Forwarding</h3>
+<p>To make your privacy complete, we’ve also introduced a way to restrict who can <strong>forward</strong> your messages. When this setting is enabled, your forwarded messages will no longer lead back to your account — they&#39;ll just display an unclickable name in the “from” field. This way people you chat with will have no verifiable proof you ever sent them anything. </p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140230/1b53/Ss_cNeGlcCY.27754/e09d3cc565b9ccd010.jpg" style="max-width: 480px;" title="Anonymized forwarding" alt="Anonymized forwarding">
+  <source src="file/811140338/1915/pEGln7bGq5I.337432.mp4/20b3198d72282d72a2" type="video/mp4">
+ </video>
+</div>
+
+<p>Look for “Forwarded messages” in <em>Privacy and Security</em> settings. By the way, you can now also restrict who can view your profile photos.</p>
+<h3><a class="anchor" name="settings-search" href="#settings-search"><i class="anchor-icon"></i></a>Settings Search</h3>
+<p>Since the Settings section keeps getting bigger, we’ve added a <strong>search tool</strong> that allows you to quickly find any <strong>settings</strong> you need.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140262/19eb/8ECerWWQ8gY.50656/f03722dc961c694213.jpg" style="max-width: 480px;" title="Settings search" alt="Settings search">
+  <source src="file/811140410/1c3e/Aq9fXAapLhY.762054.mp4/d1cbb81ec596549f48" type="video/mp4">
+ </video>
+</div>
+
+<p>This new search tool in Settings also shows answers to any Telegram-related questions based on the <strong>FAQ</strong>: </p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140018/1569/iGoNK24aLdQ.28206/a6ff4e672694bcf91f.jpg" style="max-width: 480px;" title="FAQ search" alt="FAQ search">
+  <source src="file/811140096/15c9/pIPm-zF2evE.584620.mp4/e5773aa20c2047cc07" type="video/mp4">
+ </video>
+</div>
+
+<h3><a class="anchor" name="emoji-search-and-gifs" href="#emoji-search-and-gifs"><i class="anchor-icon"></i></a>Emoji Search and GIFs</h3>
+<p>The GIF and stickers search has been upgraded on all mobile platforms – it now looks better and finds more cats. Any GIF you find can be previewed by tapping and holding. Sticker packs now have <strong>icons</strong>, which makes selecting the right pack easier. Large GIFs and video messages on Telegram are now streamed, so you can start watching them without waiting for the download to complete.</p>
+<p>On Telegram for <strong>Android</strong>, you can now use keywords in many languages to find any <strong>emoji</strong>. If we are missing a keyword for an emoji, you’re welcome to suggest it <a href="https://translations.telegram.org/en/emoji">here</a> – emoji search will constantly be improving without the need to update Telegram.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140442/1988/MZRh2Kop8_U.70437/3973dd28a155f4837d.jpg" style="max-width: 480px;" title="Emoji search" alt="Emoji search">
+  <source src="file/811140029/1542/c18-Mgr4n44.920898.mp4/651ec9b423e42ce17e" type="video/mp4">
+ </video>
+</div>
+
+<p>You’ll also see a list of related emoji when typing a message. If you like an emoji enough to send it without any accompanying text, the emoji will appear larger in the chat on Android (iOS coming soon).</p>
+<h3><a class="anchor" name="voiceover-and-talkback" href="#voiceover-and-talkback"><i class="anchor-icon"></i></a>VoiceOver and TalkBack</h3>
+<p>We’ve added support for accessibility features – VoiceOver on iOS and TalkBack on Android. These gesture-based technologies give you spoken feedback so that you can use Telegram without seeing the screen.</p>
+<blockquote>
+<p>Tell us what you think the <a href="https://t.me/telegram/105">next update</a> should be.</p>
+</blockquote>
+<p><em>March 24, 2019<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Funsend-privacy-emoji&amp;text=Introducing%20a%20new%20age%20of%20private%20communication%3A%20unsend%20any%20message%2C%20anonymized%20forwarding%20and%20more%20" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Introducing a new age of private communication: unsend any message, anonymized forwarding and more " data-url="blog/unsend-privacy-emoji.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Introducing a new age of private communication: unsend any message, anonymized forwarding and more " data-url="https://telegram.org/blog/unsend-privacy-emoji" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/autoplay.html">Autoplaying Videos, Automatic Downloads and Multiple Accounts</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140858/19a9/8_6hyNmRE_4.61183.gif/6f34734962bbf427e5.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140381/184f/M1A6UJ-pe1o.202169/333691c2d8333eff34.jpg" target="_blank"><img src="file/811140916/1aa0/YRF4jfg6IBY.69601/87609997bcba850a29.jpg" srcset="/file/811140381/184f/M1A6UJ-pe1o.202169/333691c2d8333eff34, 1200w" title="Autoplaying Videos and New Automatic Download Settings" alt="Autoplaying Videos and New Automatic Download Settings"/></a>
+</div>
+
+<p>Today&#39;s update will make Telegram chats livelier with <strong>Autoplaying Videos</strong>. Smaller videos will start playing without sound when they reach your screen. To unmute them, simply press the volume buttons on your device.</p>
+<div class="blog_video_player_wrap" style="max-width: 360px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop muted controls poster="file/811140020/13d1/6NQtgBxRbm0.76637/de74ea7970e30adaf7.jpg" style="max-width: 360px;" title="Telegram 5.4: Autoplaying videos, automatic download settings and multiple accounts" alt="Telegram 5.4: Autoplaying videos, automatic download settings and multiple accounts">
+  <source src="file/811140444/16f4/XOus7d0Ob-c.4861738.mp4/47ef7f2c9b5b69a3cf" type="video/mp4">
+ </video>
+</div>
+
+<p>If you like to be in control of your data usage, try the new <strong>auto-download settings</strong>. It‘s easy to see your current settings at a glance and we’ve added a new quick way to switch between <em>Low</em>, <em>Medium</em> and <em>High</em> presets for Mobile, Roaming and Wi-Fi.</p>
+<p>You can also manually set up automatic downloads by chat type, media type and file size. The app will remember your choices as the <strong>Custom</strong> preset in case you need to temporarily switch to <em>Low</em> and back — or the other way around.</p>
+<h3><a class="anchor" name="to-each-according-to-their-needs" href="#to-each-according-to-their-needs"><i class="anchor-icon"></i></a>To Each According to Their Needs</h3>
+<p><strong>Default settings</strong> for data usage have become more generous but depend on the affordability of mobile data in your country. We know that in some places it&#39;s easier to buy an aircraft carrier than download an extra 20MB (looking at you, Ethiopia). Telegram will try to download less data for users in such countries.</p>
+<p>On the other hand, if you&#39;re likely to have a monster data allowance, Telegram will try to save you from tapping the “download” arrow too often.</p>
+<p>These new default limits for automatic downloads are not set in stone. Starting today, we can change them remotely, based on your feedback and the cost of data in each country.</p>
+<h3><a class="anchor" name="to-log-out-or-not-to-log-out" href="#to-log-out-or-not-to-log-out"><i class="anchor-icon"></i></a>To Log Out or Not to Log Out?</h3>
+<p>New users often bring their logout habits from other apps and don&#39;t realize that this is rarely necessary on Telegram. To help them find their way around the app, the logout menu now shows several <strong>alternative options</strong> to logging out:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140012/14da/ieistQZQ6lg.88905/5379cdb7631551cdeb.jpg" target="_blank"><img src="file/811140894/186b/WNRse1RoYKY.25340/381478127159cf2a17.jpg" title="Logout Alternatives" alt="Logout Alternatives" srcset="/file/811140012/14da/ieistQZQ6lg.88905/5379cdb7631551cdeb , 2x" /></a>
+  <p>Logout Alternatives</p>
+</div>
+
+
+<h3><a class="anchor" name="multiple-account-support" href="#multiple-account-support"><i class="anchor-icon"></i></a>Multiple Account Support</h3>
+<p>Some of us have several phone numbers and multiple Telegram accounts: one for work, another strictly personal and a third one provided by benevolent aliens along with instructions to never use it except in a planetary emergency.</p>
+<p>You can <strong>add</strong> all these accounts to your app and easily <strong>switch</strong> between up to <strong>3 phone numbers</strong> without logging out.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140511/18a4/kdWsZBSsX2Q.73549/73179a774fe7f72fc9.jpg" target="_blank"><img src="file/811140196/1797/kZp6wwiEPlo.21614/906e800fd00c4289db.jpg" title="Add account" alt="Add account" srcset="/file/811140511/18a4/kdWsZBSsX2Q.73549/73179a774fe7f72fc9 , 2x" /></a>
+  <p>Add Account in Settings > Edit</p>
+</div>
+
+<p>If you&#39;ve added several accounts, you will receive <strong>push notifications</strong> for all of them. Notifications will include information on which account they were sent to. You can also tap and hold on an account in Settings for a sneak peek of its chats list:</p>
+<div class="blog_video_player_wrap" style="max-width: 360px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140460/1509/rnD30QBushk.43392/cfd7ca223275d60178.jpg" style="max-width: 360px;" title="View chat list from another account" alt="View chat list from another account">
+  <source src="file/811140374/1948/g1riM_oPz98.626342.mp4/62b8251b4d23b20c82" type="video/mp4">
+ </video>
+</div>
+
+<p>The multiple accounts feature was <a href="blog/themes-accounts.html#multiple-accounts">born</a> in Telegram for Android and is now also available on iOS. We hope your alter-egos will be pleased.</p>
+<div><br></div>
+
+<p><em>February 26, 2019,<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fautoplay&amp;text=Telegram%205.4%20introduces%20autoplaying%20videos%2C%20smart%20autodownload%20settings%20and%20support%20for%20multiple%20accounts." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Telegram 5.4 introduces autoplaying videos, smart autodownload settings and support for multiple accounts." data-url="blog/autoplay.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Telegram 5.4 introduces autoplaying videos, smart autodownload settings and support for multiple accounts." data-url="https://telegram.org/blog/autoplay" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/backgrounds-2-0.html">Chat Backgrounds 2.0: Make Your Own</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140419/15ae/2JnKOZVHJj4.51338.gif/09446e46c6806d17f5.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140759/1775/b9fjEQxabOs.281380/ee4339ed9cf5723a1b.jpg" target="_blank"><img src="file/811140807/171c/nM-umjzccMk.281380/62815d6e22a040ade0.jpg" srcset="/file/811140759/1775/b9fjEQxabOs.281380/ee4339ed9cf5723a1b, 1200w" title="Telegram 5.3: Introducing the Backgrounds Platform" alt="Telegram 5.3: Introducing the Backgrounds Platform"/></a>
+</div>
+
+<p>No chat can be dull if you have a really cool <strong>chat background</strong>. Today&#39;s update will ensure you get one. You can now search the web for wallpapers, add effects and then share your backgrounds with friends via links.</p>
+<p>Telegram backgrounds now support <strong>motion</strong> and <strong>blur</strong> effects. You can also set <strong>any color</strong> as your background, apply a <strong>pattern</strong> and tweak its <strong>intensity</strong>.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140418/15e0/j_lwNguKDFc.66341/0f32dbc76f3bb2e938.jpg" preload="auto" style="max-width: 480px;" title="Video: Changing chat backgrounds" alt="Video: Changing chat backgrounds">
+  <source src="file/811140201/17dc/zl5I4FqY-0I.8621957.mp4/fc46a9cbd83c40c5cd" type="video/mp4">
+ </video>
+</div>
+
+<p>Just like before, you can set <strong>any photo</strong> from your gallery as your chat background. On Android, you can add some extra effects in the built-in <a href="blog/masks.html">photo editor</a>.</p>
+<h3><a class="anchor" name="share-links" href="#share-links"><i class="anchor-icon"></i></a>Share links</h3>
+<p>Having used this new arsenal to create the perfect chat background, you can easily set it to Telegram on all your other devices. What&#39;s more, you can infect the rest of the world with your genius by <strong>sharing your background via a link</strong>, just like this one:<br><a href="https://t.me/bg/l7jg-vpxmEYBAAAA1e0rNKySlkk"><a href="https://t.me/bg/l7jg-vpxmEYBAAAA1e0rNKySlkk">https://t.me/bg/l7jg-vpxmEYBAAAA1e0rNKySlkk</a></a></p>
+<div class="blog_image_wrap">
+  <a href="file/811140275/1cd8/CXwLk1wzaoI.89310/03720b44bba0599112.jpg" target="_blank"><img src="file/811140905/15f4/DuywmmMsLAw.15752/deed0453f0774e3609.jpg" alt="Message containning a Telegram background" srcset="/file/811140275/1cd8/CXwLk1wzaoI.89310/03720b44bba0599112 , 2x" /></a>
+</div>
+
+<h3><a class="anchor" name="search-backgrounds" href="#search-backgrounds"><i class="anchor-icon"></i></a>Search backgrounds</h3>
+<p>If you don‘t feel very creative and would like to simply set something nice real quick, we’ve <strong>added new backgrounds</strong> to the official selection.</p>
+<p>We&#39;ve also included a <strong>background search</strong> option. Find your dream wallpaper based on keywords or color and then set it in just a few taps.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140592/16ee/_5hvcsNHsjY.78886/532eeb7dbb0751b75d.jpg" target="_blank"><img src="file/811140231/18c8/AvCVJcvzt0I.16058/7f19b9944bc3f9713b.jpg" title="Background Search Results" alt="Background Search Results" srcset="/file/811140592/16ee/_5hvcsNHsjY.78886/532eeb7dbb0751b75d , 2x" /></a>
+</div>
+
+<p>We&#39;re also announcing the <strong>Instant View 2.0 Template Competition</strong>: two months, <strong>$300,000+</strong> in prizes, <strong>$100</strong> per template. See <a href="https://instantview.telegram.org/contest">Instant View Contest 2.0</a> for details.</p>
+<div><br></div>
+
+<p><em>January 31, 2019<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fbackgrounds-2-0&amp;text=Chat%20Backgrounds%202.0%3A%20Search%20the%20web%20for%20wallpapers%20or%20make%20your%20own%2C%20add%20effects%20like%20blur%2Fmotion%20and%20share%20backgrounds%20with%20friends%20via%20links." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Chat Backgrounds 2.0: Search the web for wallpapers or make your own, add effects like blur/motion and share backgrounds with friends via links." data-url="blog/backgrounds-2-0.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Chat Backgrounds 2.0: Search the web for wallpapers or make your own, add effects like blur/motion and share backgrounds with friends via links." data-url="https://telegram.org/blog/backgrounds-2-0" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/permissions-groups-undo.html">Group Permissions, Undo Delete and More</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140024/19d4/AAGshRJPlDQ.49491.gif/d720ab094bd4cbb42d.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140366/1a4d/emXluVSoFTc.195243/58a5ff3cfc09b21e32.jpg" target="_blank"><img src="file/811140573/1964/yoc6BYIat8M.67678/d9e9cebb9aca723248.jpg" srcset="/file/811140366/1a4d/emXluVSoFTc.195243/58a5ff3cfc09b21e32, 1200w" title="Introducing Telegram 5.2: New permissions for groups, unified group settings, undo deleting chats and more" alt="Introducing Telegram 5.2: New permissions for groups, unified group settings, undo deleting chats and more"/></a>
+</div>
+
+<p>Ever wanted to run a sticker-free or GIF-free community? With <strong>group permissions</strong>, admins can now restrict all members from posting specific kinds of content. Or even restrict members from sending messages altogether – let the <strong>admins</strong> chat amongst themselves while everybody else witnesses their wisdom in silent awe.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140749/1b1e/8geBiOHLtWE.61270/afefe36554bfdd2cf6.jpg" style="max-width: 480px;">
+  <source src="file/811140382/185f/5jNqcBZ0weI.4498521.mp4/975313fba38aa25c91" type="video/mp4">
+ </video>
+</div>
+
+<p>In case you ever felt lonely in a group with 100,000 members, Telegram groups now support up to <strong>200,000 members</strong> – so now you can feel <em>twice</em> as lonely <img class="emoji" src="img/emoji/40/F09F9983.png" width="20" height="20" alt="🙃" />. To make managing groups more enjoyable, we&#39;ve streamlined all group interfaces, including the Settings screens, Admin panels and Member lists.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140249/16c3/nZKNjRvrWiA.27327/8d07f8f6381796697b.jpg" target="_blank"><img src="file/811140095/1549/7Tu3Zj104EQ.27327/accbc3740af1d53ba7.jpg" title="New group, redesigned empty screen" alt="New group, redesigned empty screen" srcset="/file/811140249/16c3/nZKNjRvrWiA.27327/8d07f8f6381796697b , 2x" /></a>
+  <p>A newly created group</p>
+</div>
+
+<p>As of today, supergroups and basic groups are simply <strong>groups</strong>. It now takes just a few taps to make <em>any</em> group <strong>public</strong>, add admins with <strong>granular privileges</strong> or toggle <strong>persistent history</strong>.</p>
+<p>Have fun bossing around groups the size of the city of <a href="https://en.wikipedia.org/wiki/Kassel">Kassel</a>!</p>
+<h3><a class="anchor" name="undo-clearing-history-and-deleting-chats" href="#undo-clearing-history-and-deleting-chats"><i class="anchor-icon"></i></a>Undo clearing history and deleting chats</h3>
+<p>Deleting the wrong chat is rarely fun – but now you&#39;ll have a chance to reconsider.</p>
+<p>When you delete a chat or clear chat history, you&#39;ll get a detailed confirmation dialog and an option to <strong>restore</strong> the chat within the next <strong>5 seconds</strong>. Once the time is up, the chat is irretrievably lost in the jaws of Telegram’s underground data shredders. </p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140243/1a42/75KAAxWNUZI.102306/b1e0a823a024c6434b.jpg" style="max-width: 480px;">
+  <source src="file/811140397/16f0/tDiIJNnke-0.4336643.mp4/9d01615dfc3c79e2d4" type="video/mp4">
+ </video>
+</div>
+
+<p>If you relied on “I accidentally deleted the chat with my homework” in your studies, please accept our apologies. From now on, you&#39;ll have to blame your digital dog.</p>
+<h3><a class="anchor" name="sort-your-contacts" href="#sort-your-contacts"><i class="anchor-icon"></i></a>Sort your contacts</h3>
+<p>Back to the topic of bossing people around, you can now <strong>sort</strong> your contacts by <strong>name</strong> and by <strong>last seen time</strong> on both <a href="https://itunes.apple.com/app/telegram-messenger/id686449807">iOS</a> and <a href="dl/android.html">Android</a>.</p>
+<div class="blog_2images_wrap">
+<div class="blog_image_wrap">
+  <a href="file/811140731/1833/HIHf23ZnvhM.38060/bddd1e8907cf8d94fe.jpg" target="_blank"><img src="file/811140911/158e/QO4022K0GhQ.8834/f1b2def65bdb716e58.jpg" title="Sorting contacts on iOS" alt="Sorting contacts on iOS" srcset="/file/811140731/1833/HIHf23ZnvhM.38060/bddd1e8907cf8d94fe , 2x" /></a>
+  <p>iOS</p>
+  </div>
+<div class="blog_image_wrap">
+  <a href="file/811140875/194d/Azfff5DbqmA.43060/f692b7f2804bb1a6e2.jpg" target="_blank"><img src="file/811140874/15ce/MU4dYyIhnjI.9608/67cebb2b338ab79b0e.jpg" title="Sorting contacts on Android" alt="Sorting contacts on Android" srcset="/file/811140875/194d/Azfff5DbqmA.43060/f692b7f2804bb1a6e2 , 2x" /></a>
+  <p>Android</p></div>
+</div>
+
+<h3><a class="anchor" name="thumbnails-and-download-animations" href="#thumbnails-and-download-animations"><i class="anchor-icon"></i></a>Thumbnails and download animations</h3>
+<p>Waiting for large media downloads to finish ranks very low on the list of <em>“The Most Exciting Things to Do Online”</em>. We decided to spice this process up a bit by improving our animation algorithms and adding an ultra-light thumbnail to each photo and video:</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140900/1478/mXA-2vGoluo.132335/4203ca72e4ff670392.jpg" style="max-width: 480px;">
+  <source src="file/811140960/18bb/01ODY588sHc.2275591.mp4/b32b4a970c88ae4e09" type="video/mp4">
+ </video>
+</div>
+
+<p>From now on, every photo you receive will start its life as an obscure blur instead of an empty square. Isn’t this just <em><strong>beautiful?</strong></em></p>
+<h3><a class="anchor" name="search-bars-dark-mode-and-moar-profile-pics" href="#search-bars-dark-mode-and-moar-profile-pics"><i class="anchor-icon"></i></a>Search bars, dark mode and moar profile pics</h3>
+<p><strong>Search bars</strong> on Telegram for iOS and the default <strong>dark mode</strong> theme on Android got some face-lifting. The Android app also allows you to set up a <strong>profile picture</strong> when you create an account, so expect to see more friends with faces from now on.</p>
+<h3><a class="anchor" name="meanwhile-on-desktop" href="#meanwhile-on-desktop"><i class="anchor-icon"></i></a>Meanwhile on Desktop…</h3>
+<p>The new group permissions also work in <a href="https://desktop.telegram.org/">Telegram Desktop</a>. Additionally, version <strong>1.5.8</strong> introduces support for <strong>automatically downloading files</strong> and music and choosing <strong>input and output devices</strong> for Telegram Calls.</p>
+<p>Last but not least, you can now change your visuals before heading into an <strong>emoji</strong> fight:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140660/17ee/38J2vYJLJdA.36118/67fd52e531ec542400.jpg" target="_blank"><img src="file/811140242/150b/u8tQd61_E_Y.8544/e6d892ea52a6d556c1.jpg" title="Choose how you see emoji on Telegram Desktop" alt="Choose your emoji on Telegram Desktop" srcset="/file/811140660/17ee/38J2vYJLJdA.36118/67fd52e531ec542400 , 2x" /></a>
+  <p>Choose how you see emoji on Telegram Desktop</p>
+</div>
+
+<p>Another glorious Telegram update is coming in a week or two, so STAY TUNED!</p>
+<div><br></div>
+
+<p><em>January 21, 2019,<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fpermissions-groups-undo&amp;text=Telegram%205.2%20introduces%20group%20permissions%2C%20unified%20group%20settings%2C%20undo%20delete%20and%20more" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Telegram 5.2 introduces group permissions, unified group settings, undo delete and more" data-url="blog/permissions-groups-undo.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Telegram 5.2 introduces group permissions, unified group settings, undo delete and more" data-url="https://telegram.org/blog/permissions-groups-undo" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/polls.html">Polls: Bringing Choice to Communities</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140742/1a15/aIL-H7A3zdY.17085.gif/9c4f2daca34cdba715.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140564/1444/t8TKJSNGMTM.265286/2f0c7f170337a57ef7.jpg" target="_blank"><img src="file/811140442/1987/lDXpp1l2oUA.96142/373b1292fe14b0e24e.jpg" srcset="/file/811140564/1444/t8TKJSNGMTM.265286/2f0c7f170337a57ef7, 1200w" title="Introducing Polls"/></a>
+</div>
+
+<p>Large communities on Telegram frequently use <strong>polls</strong> to coordinate their activities and stay in touch with their members. Today, we&#39;re rolling out a <strong>dedicated tool</strong> for polls in addition to existing bots like <a href="https://t.me/vote">@vote</a>. We hope the new built-in polls will be a welcome addition to groups with <strong>100,000</strong> members and channels with <strong>millions</strong> of subscribers.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140146/14bc/Wt_mXDKi4XI.40462/e83031b9a94c0242c9.jpg" style="max-width: 480px;">
+  <source src="file/811140414/185e/lkrTw0EBhDg.4264189.mp4/2c82452b3cecdaeb75" type="video/mp4">
+ </video>
+</div>
+
+<p>Polls can be <strong>forwarded</strong> to increase reach and <strong>pinned</strong> for better visibility (and also to notify all members of the community).</p>
+<p>At the moment, polls are <strong>anonymous</strong>, meaning that no one can see who voted for what. Going forward, we may introduce non-anonymous polls where the voters lists will be public, but such polls will be explicitly marked as non-anonymous. </p>
+<blockquote>
+<p><a href="blog/200-million.html">Telegram has your back</a> when it comes to privacy: we never disclose the private data you entrusted us with to third parties and never monetize it.</p>
+</blockquote>
+<hr>
+<h4><a class="anchor" name="image-search-and-other-improvements-on-ios" href="#image-search-and-other-improvements-on-ios"><i class="anchor-icon"></i></a>Image Search and Other Improvements on iOS</h4>
+<p>Back to more mundane matters, you can use <strong>Web Search</strong> again to find images when sending <em>Photo &amp; Video</em> attachments or choosing profile pictures in our iOS app. Setting a Grinch avatar for Christmas has never been easier:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140572/175b/KuJY_pnNOSk.72598/4c597bab7ceaec4c98.jpg" target="_blank"><img src="file/811140536/1945/K0CG6SB7wEo.16440/63393d871b306bb975.jpg" title="TITLE" srcset="/file/811140572/175b/KuJY_pnNOSk.72598/4c597bab7ceaec4c98 , 2x" /></a>
+</div>
+
+<p><a href="blog/translations-iv2.html#the-great-ios-bug-hunt">The Great iOS Bug Hunt</a> goes on and the app received numerous fixes in version <strong>5.1.1</strong>.</p>
+<p>To name a few improvements: Clearing the cache in <em>Settings &gt; Data and Storage &gt; Storage Usage</em> now correctly <strong>reduces</strong> the <strong>space</strong> taken by the app. Files and media will <strong>keep downloading</strong> for a while after you close the app. You will see <strong>detailed progress</strong> when downloading and uploading files. We&#39;ve also added <strong>online indicators</strong> for the ‘People’ section in search results.</p>
+<p>Happy Winter Solstice!</p>
+<div><br></div>
+
+<p><em>December 22, 2018<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Fpolls&amp;text=Telegram%205.1%20introduces%20a%20dedicated%20tool%20for%20polls.%20" class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Telegram 5.1 introduces a dedicated tool for polls. " data-url="blog/polls.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Telegram 5.1 introduces a dedicated tool for polls. " data-url="https://telegram.org/blog/polls" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/translations-iv2.html">Custom Languages, Instant View 2.0 and More</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140113/175f/teeYgEx8WqM.62354.gif/dc4b3c1cbb3b9f904d.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+<img src="file/811140872/156e/VEk6KuCKIGg.84119/ac11e3e9f9ee1cbd65.jpg" srcset="/file/811140726/1905/VdDMrogasgw.239749/17f4769ecbd650f4da, 1200w" alt="Introducing custom languages, IV 2.0, a new design for Android and more"/>
+</div>
+
+<!--    <a href="/file/811140726/1905/VdDMrogasgw.239749/17f4769ecbd650f4da" target="_blank">-->
+
+<p>Telegram&#39;s <a href="https://translations.telegram.org/"><strong>Translations Platform</strong></a> allows you to suggest better wording for Telegram interfaces in any language. We&#39;ve recently rolled out support for most mainstream languages, and translations are already <a href="faq.html#q-can-i-translate-telegram">underway</a>.</p>
+<p>Today&#39;s update brings equal treatment to the smaller linguistic communities around the world. <strong>Anyone</strong> can now use the translation platform to create their own <strong>custom language packs</strong> – and translate Telegram into any minority language or local dialect, be that Māori, Scottish Gaelic or Transliterated Klingon.</p>
+<p>We&#39;ve made it easy to <strong>spread your translations</strong>. To translate the interface of your app, simply follow the <strong>dedicated sharing link</strong> of the desired language. Sharing links can be obtained in the translation panel.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140222/15de/vZk9OdRLVAk.195322/d111205a69719ea617.jpg" target="_blank"><img src="file/811140188/163f/x7-xsyxBP-Y.27949/8c183be32b4b61906c.jpg" alt="Applying a custom language" srcset="/file/811140222/15de/vZk9OdRLVAk.195322/d111205a69719ea617 , 2x" /></a>
+</div>
+
+<p>Each language also gets its own <strong>public group</strong> for discussions. Here are the links for the Catalan language, for example:</p>
+<ul>
+<li>Open <a href="https://t.me/setlanguage/ca">t.me/setlanguage/ca</a> in Telegram to set your language to Catalan.</li>
+<li>Check <a href="https://t.me/translation_ca">t.me/translation_ca</a> for real-time discussions of the Catalan translation.</li>
+</ul>
+<p>Once a user switches to your translation, all changes you apply in the interface will be <strong>applied immediately</strong>. The days of waiting for the apps to update or passing around localization files are over.</p>
+<h3><a class="anchor" name="instant-view-2-0" href="#instant-view-2-0"><i class="anchor-icon"></i></a>Instant View 2.0</h3>
+<p>Another unique feature of Telegram is the <a href="https://instantview.telegram.org/"><strong>Instant View</strong></a> technology that allows Telegram users to view web pages in a consistent way, with <strong>zero loading time</strong>.</p>
+<p>Today we&#39;re expanding the platform with support for right-to-left languages, blocks of related articles, image links, tables, nested lists, horizontal scrolling, collapsible text blocks and much more. </p>
+<p>Now you can get beautiful instant view pages for even very complex articles. If you&#39;re reading this from one of our newly updated mobile apps, try <a href="https://en.m.wikipedia.org/wiki/Shore">this Wikipedia page</a> for an example.</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140674/1e30/taJtsItk6xI.45552/bcf887a3de42f58d03.jpg" style="max-width: 480px;">
+  <source src="file/811140849/14f3/OftMGo-UVVg.3026919.mp4/243402fe5c3a79cdb4" type="video/mp4">
+ </video>
+</div>
+
+<!--<div class="blog_image_wrap">
+  <a href="/file/811140031/18e8/0csHv57cdP8.608795/4ee238e0c916afb922" target="_blank"><img src="/file/811140001/13e8/nrYmVmUaXns.61468/c9607e39587fe51a5a" title="YYY" srcset="/file/811140031/18e8/0csHv57cdP8.608795/4ee238e0c916afb922 , 2x" /></a>
+  <p>Instant View Page</p>
+</div>-->
+
+<p>Soon we will announce a new <strong>crowdsourcing contest</strong> to make Instant View pages available for an even larger part of the internet.</p>
+<h3><a class="anchor" name="the-great-ios-bug-hunt" href="#the-great-ios-bug-hunt"><i class="anchor-icon"></i></a>The Great iOS Bug Hunt</h3>
+<p>We&#39;ve made close to a thousand fixes and improvements to the iOS app since the <a href="blog/telegram-5-ios.html">major release</a> of version 5.0. The new <a href="https://itunes.apple.com/ae/app/telegram-messenger/id686449807?mt=8">Telegram for iOS 5.1</a> features some 400 minor improvements.</p>
+<h3><a class="anchor" name="new-design-for-android" href="#new-design-for-android"><i class="anchor-icon"></i></a>New Design for Android</h3>
+<p><a href="https://play.google.com/store/apps/details?id=org.telegram.messenger&amp;hl=en">Telegram for Android</a> has now reached version <strong>5.0</strong> and received a major overhaul in the design department. It is now much easier to <strong>access shared media</strong> from the profiles of users, groups and channels:</p>
+<!--<div class="blog_image_wrap">
+  <a href="/file/811140608/1aa3/ROQ4JaOReXY.86052/7040cb5442e0b31d9a" target="_blank"><img src="/file/811140965/191d/lKTGcY6Nhk8.22584/f0c0ea7d423e5cb697" title="YYY" srcset="/file/811140608/1aa3/ROQ4JaOReXY.86052/7040cb5442e0b31d9a , 2x" /></a>
+</div>-->
+
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140949/1671/nBvoGBLnJ3U.23027/57059f38fc2731bca8.jpg" style="max-width: 480px;">
+  <source src="file/811140655/1577/7yU1-4Gb4Tw.3598920.mp4/95e342382ff1b3b53d" type="video/mp4">
+ </video>
+</div>
+
+<p>Shared media now offers high quality crisp previews, increased loading speed, more info in the links and files sections, and more efficient design.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140259/196b/d48yIQwQ0wE.58804/65c426f978e73e2f83.jpg" target="_blank"><img src="file/811140894/186a/9qJnAoUrj8s.24096/63faa4ab172eb4526e.jpg" alt="Shared Files" srcset="/file/811140259/196b/d48yIQwQ0wE.58804/65c426f978e73e2f83 , 2x" /></a>
+</div>
+
+<p>The <strong>Settings screens</strong> were redesigned for a more streamlined experience:</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140072/1a5f/L9lbK-sbl1s.23154/71f23440e35d42d67f.jpg" style="max-width: 480px;">
+  <source src="file/811140242/150a/6qdj-UMuoAQ.4295461.mp4/329d1b21b12b104d93" type="video/mp4">
+ </video>
+</div>
+
+<p>Following in the footsteps of the iOS app, Android users can take advantage of the new detailed settings for the <strong>badge counter</strong> in Settings &gt; Notification and Sounds:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140465/1626/BpHEY-esB6M.78252/7d355c8b99c9d45793.jpg" target="_blank"><img src="file/811140929/1555/Ypyq6qrBH6k.11819/ae710ea32d2fb9ec8f.jpg" alt="Badge Counter Settings" srcset="/file/811140465/1626/BpHEY-esB6M.78252/7d355c8b99c9d45793 , 2x" /></a>
+</div>
+
+<p>We&#39;ve upgraded the <strong>photo selector</strong> for profile pictures so that you can choose the correct head to be displayed on your profile:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140354/1b16/6MhgejUtQBE.206372/289a5b36c65aa9c6d0.jpg" target="_blank"><img src="file/811140228/1a4e/6FxNoPDJPi4.47572/7ff9065ba342181292.jpg" alt="Choose an area to use for the photo" srcset="/file/811140858/19a8/3JblkBB82hE.87697/d6b967e0bcb771fbf6 , 2x" /></a>
+</div>
+
+<p>Last but not least, you can <strong>zoom videos</strong> during playback and <strong>browse full-resolution images</strong> sent as documents just like normal photos, by <strong>swiping</strong> left and right.</p>
+<div><br></div>
+
+<p><em>December 10, 2018<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Ftranslations-iv2&amp;text=Custom%20language%20packs%20that%20are%20easy%20to%20create%20and%20spread%2C%20Instant%20View%202.0%2C%20redesigned%20Telegram%20for%20Android%20and%20more." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Custom language packs that are easy to create and spread, Instant View 2.0, redesigned Telegram for Android and more." data-url="blog/translations-iv2.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Custom language packs that are easy to create and spread, Instant View 2.0, redesigned Telegram for Android and more." data-url="https://telegram.org/blog/translations-iv2" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div><div class="tl_contest_page_wrap">
+  <div id="dev_page_content_wrap" class=" ">
+  
+  <h1 id="dev_page_title" dir="auto"><a href="blog/telegram-5-ios.html">Introducing Telegram 5.0 for iOS</a></h1>
+  
+  <div id="dev_page_content" dir="auto"><div class="blog_side_image_wrap">
+    <img src="file/811140791/1866/WkFqT-GkLAQ.18952.gif/455699a1841d5f748c.gif" class="blog_side_image"/>
+</div>
+
+<div class="blog_wide_image">
+    <a href="file/811140852/15c0/07KL8rRD8fc.201096/da6c7661f117a8963c.jpg" target="_blank"><img src="file/811140143/1b9d/BeUrP0jadbs.74074/3064e2423d8fb38bf2.jpg" srcset="/file/811140852/15c0/07KL8rRD8fc.201096/da6c7661f117a8963c, 1200w" title="Meet Telegram 5 for iOS"/></a>
+</div>
+
+<p>For the last couple of years we&#39;ve been quietly rebuilding <a href="https://itunes.apple.com/app/telegram-messenger/id686449807">Telegram for iOS</a> from scratch with Swift – a programming language released by Apple as a faster alternative to Objective C.</p>
+<p>Today <a href="https://itunes.apple.com/app/telegram-messenger/id686449807"><strong>Telegram 5.0</strong></a> goes live for <strong>all our iOS users</strong>, becoming the most popular messaging app written fully in Swift. This new version of Telegram looks just like the old one, but is <strong>slicker</strong>, more <strong>battery-friendly</strong> and <strong>faster</strong> (which is surprising, given how fast the old one already was).</p>
+<div class="blog_video_player_wrap" style="max-width: 480px; margin: 20px auto 20px;">
+ <video class="blog_video_player tl_blog_vid_autoplay" onclick="videoTogglePlay(this)"  loop controls muted poster="file/811140159/1581/ht2dP5WQ_2A.43742/ef1297c56cc650a4eb.jpg" style="max-width: 480px;">
+  <source src="file/811140006/167f/3YFfIY18sjY.1718447.mp4/a746f55092c88ba9f5" type="video/mp4">
+ </video>
+</div>
+
+<p>The new app is superior in many ways. We love the new <strong>smooth animations</strong> in chats. Messages will now <strong>sync quickly</strong>, even if you haven‘t opened Telegram for a long time and there’s a LOT to sync. We‘ve also improved the app’s activity in the background to ensure that all of your <strong>unmuted chats</strong> are <strong>always up to date</strong>.</p>
+<h4><a class="anchor" name="step-aside-and-back" href="#step-aside-and-back"><i class="anchor-icon"></i></a>Step aside — and back</h4>
+<p>The new <strong>expandable in-app notifications</strong> will help you focus on whatever you‘re doing in the app without having to ignore incoming messages. When a notification arrives, pull it down to open the relevant chat. When you’re done with the interruption, simply close it to get right back to what you were doing.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140461/20f6/uMWqeGz4wZA.98740/01af3f17a3014ed0d3.jpg" target="_blank"><img src="file/811140461/20f6/uMWqeGz4wZA.98740/01af3f17a3014ed0d3.jpg" title="Expanded notification window" srcset="/file/811140461/20f6/uMWqeGz4wZA.98740/01af3f17a3014ed0d3 , 2x" /></a>
+  <p>Expanded Notification</p>
+</div>
+
+<p>This works <strong>everywhere</strong> in the app, including when you are viewing media or reading Instant View articles.</p>
+<h4><a class="anchor" name="make-every-chat-count" href="#make-every-chat-count"><i class="anchor-icon"></i></a>Make every chat count</h4>
+<p>Previously, badge counters could become less useful after you&#39;ve joined a group or two with <a href="tour/groups.html">100,000 members</a>. Today we&#39;re making private chats great again.</p>
+<p>You can now switch the <strong>unread counter</strong> to display the number of <strong>unmuted chats</strong> with unread messages. So instead of 1001 for a thousand messages in a muted group and one very important message from your dog, your badge counter will look like this:</p>
+<div class="blog_image_wrap">
+  <a href="file/811140720/1616/TiQ_k-1Ng_M.18583/afde7efbaf80ad46a2.jpg" target="_blank"><img src="file/811140720/1616/TiQ_k-1Ng_M.18583/afde7efbaf80ad46a2.jpg" title="Badge counter: one unread chat" srcset="/file/811140720/1616/TiQ_k-1Ng_M.18583/afde7efbaf80ad46a2 , 2x" /></a>
+  <p>One Unread Chat</p>
+</div>
+
+<p>You can adjust this behavior in <em>Settings &gt; Notifications and Sounds</em>.</p>
+<h4><a class="anchor" name="when-was-that-again" href="#when-was-that-again"><i class="anchor-icon"></i></a>When was that again?</h4>
+<p>We&#39;ve improved navigation in busy chats (and elsewhere). Scroll up a little to see the <strong>date</strong> when the messages you are viewing were sent. Tap this date to go to the <strong>first</strong> message of the day in question.</p>
+<h4><a class="anchor" name="the-bugs-are-dead-long-live-the-bugs" href="#the-bugs-are-dead-long-live-the-bugs"><i class="anchor-icon"></i></a>The bugs are dead. Long live the bugs!</h4>
+<p>As much as we would‘ve liked to, we couldn’t port over any of the bugs from the Objective C version. All the old bugs are now gone forever — or, should we say, <strong>fixed</strong>. We might‘ve added some brand new bugs while coding the new version. But don’t worry, we&#39;ll fix those in no time. The same goes for any small features that may be missing.</p>
+<h4><a class="anchor" name="meanwhile-on-macos" href="#meanwhile-on-macos"><i class="anchor-icon"></i></a>Meanwhile on macOS…</h4>
+<p>You can now use <strong>swipe gestures</strong> to navigate the interfaces on <a href="https://macos.telegram.org/">Telegram for macOS</a>. Most notably, you can <strong>swipe to reply</strong> and the chats list now works the same way it does on iOS: swipe right to Mark as Read/Unread, and left to Pin, Mute or Delete.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140061/185a/NY1UD1nbIKM.64588/9fcc35672b8b1e7f1b.jpg" target="_blank"><img src="file/811140753/15f8/90wMu_8cwOg.5620/c6448a84a20104ea5b.jpg" title="Swipe gestures in the chat list" srcset="/file/811140061/185a/NY1UD1nbIKM.64588/9fcc35672b8b1e7f1b , 2x" /></a>
+  <p>Swipe Left or Right for Options</p>
+</div>
+
+<p>Fancy MacBook Pro owners just got advanced <strong>Touch Bar</strong> support to help them send stickers and media, control buttons in alerts and pop-up windows and more.</p>
+<div class="blog_image_wrap blog_wide_image_wrap">
+  <a href="file/811140789/192e/FKFtZ3lS22U.71664/ce667021b1e09bb5c3.jpg" target="_blank"><img src="file/811140789/192e/FKFtZ3lS22U.71664/ce667021b1e09bb5c3.jpg" title="New Settings on Telegram Desktop" srcset="/file/811140789/192e/FKFtZ3lS22U.71664/ce667021b1e09bb5c3 , 2x" /></a>
+  <p>Stickers and more on MacBook Pro</p>
+</div>
+
+<p>Other new features include <strong>auto-night mode</strong> settings and a photo editor to <strong>rotate</strong> and <strong>crop pictures</strong> before sending. You can also drag and drop photos, media, and documents to <strong>change the order</strong> in which they will be sent.</p>
+<h4><a class="anchor" name="and-telegram-desktop" href="#and-telegram-desktop"><i class="anchor-icon"></i></a>…And Telegram Desktop</h4>
+<p>As for our universal <a href="https://desktop.telegram.org/">Telegram Desktop</a> app, it just got a massive overhaul in the <strong>Settings</strong> department. The new layout is similar to what you&#39;re used to in our mobile apps: </p>
+<div class="blog_image_wrap">
+  <a href="file/811140789/192d/QND3jNw4QF4.37250/e90e514737177b8007.jpg" target="_blank"><img src="file/811140789/192d/QND3jNw4QF4.37250/e90e514737177b8007.jpg" title="New Settings on Telegram Desktop" srcset="/file/811140789/192d/QND3jNw4QF4.37250/e90e514737177b8007 , 2x" /></a>
+  <p>Telegram Desktop Settings</p>
+</div>
+
+<p>The latest Telegram Desktop also features <strong>improved caching</strong> for <strong>images</strong> and <strong>GIFs</strong>, as well as new <strong>local storage settings</strong>. Go to <em>Settings &gt; Advanced &gt; Local Storage</em> to control how much disk space Telegram uses on your machine.</p>
+<p>We&#39;ve also redesigned the <strong>theme selector</strong> to make it easier to choose a day and night theme that suits you best. Remember, you can <a href="https://telegra.ph/Create-Theme-Desktop-FAQ">make your own themes</a> – or check out some <a href="https://telegra.ph/Telegram-Themes-Library-05-06#Collections">themes</a> created by other users.</p>
+<div class="blog_image_wrap">
+  <a href="file/811140396/17ab/jbwiTViR_M0.25410/2e8628403bf935f766.jpg" target="_blank"><img src="file/811140396/17ab/jbwiTViR_M0.25410/2e8628403bf935f766.jpg" title="Theme Selector" srcset="/file/811140396/17ab/jbwiTViR_M0.25410/2e8628403bf935f766 , 2x" /></a>
+  <p>Pick Your Colors</p>
+</div>
+
+
+<p>And that&#39;s it for today. Stay tuned for more updates on all our platforms.</p>
+<div><br></div>
+
+<p><em>October 1, 2018<br>The Telegram Team</em></p>
+</div>
+  
+</div>
+  <div class="tl_main_share clearfix">
+    <a href="https://t.me/share/url?url=https%3A%2F%2Ftelegram.org%2Fblog%2Ftelegram-5-ios&amp;text=Meet%20Telegram%27s%20new%20iOS%20app%3A%20faster%2C%20slicker%20and%20more%20battery-friendly." class="tl_telegram_share_btn" id="tl_telegram_share_btn" data-text="Meet Telegram&#39;s new iOS app: faster, slicker and more battery-friendly." data-url="blog/telegram-5-ios.html"><i class="tl_telegram_share_icon"></i><span class="tl_telegram_share_label" target="_blank">Forward</span></a>
+    <a href="https://twitter.com/share" class="tl_twitter_share_btn" id="tl_twitter_share_btn" data-text="Meet Telegram&#39;s new iOS app: faster, slicker and more battery-friendly." data-url="https://telegram.org/blog/telegram-5-ios" data-via="Telegram">Tweet <span class="tl_twitter_share_cnt"></span></a>
+  </div>
+</div>  <nav class="pager_wrap" aria-label="...">
+    <ul class="pager">
+      <li class="previous"><a href="blogf13c.html?offset=0"><span aria-hidden="true">&larr;</span> Newer</a></li>
+      <li class="next"><a href="blogf11f.html?offset=20">Older <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+  </nav>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer_wrap">
+  <div class="footer_columns_wrap clearfix footer_desktop">
+    <div class="footer_column footer_column_telegram">
+      <h5>Telegram</h5>
+      <div class="footer_telegram_description"></div>
+      Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+    </div>
+
+    <div class="footer_column">
+      <h5><a href="faq.html">About</a></h5>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="apps.html#mobile-apps">Mobile Apps</a></h5>
+      <ul>
+        <li><a href="https://itunes.apple.com/app/telegram-messenger/id686449807">iPhone/iPad</a></li>
+        <li><a href="dl/android.html">Android</a></li>
+        <li><a href="https://www.microsoft.com/store/apps/9WZDNCRDZHS0">Windows Phone</a></li>
+      </ul>
+    </div>
+    <div class="footer_column">
+      <h5><a href="apps.html#desktop-apps">Desktop Apps</a></h5>
+      <ul>
+        <li><a href="http://desktop.telegram.org/">PC/Mac/Linux</a></li>
+        <li><a href="http://macos.telegram.org/">macOS</a></li>
+        <li><a href="https://web.telegram.org/">Web-browser</a></li>
+      </ul>
+    </div>
+    <div class="footer_column footer_column_platform">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+      <ul>
+        <li><a href="http://core.telegram.org/api">API</a></li>
+        <li><a href="http://translations.telegram.org/">Translations</a></li>
+        <li><a href="http://instantview.telegram.org/">Instant View</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_columns_wrap clearfix footer_mobile">
+    <div class="footer_column">
+      <h5><a href="faq.html">About</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="blog.html">Blog</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="apps.html">Apps</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="http://core.telegram.org/">Platform</a></h5>
+    </div>
+    <div class="footer_column">
+      <h5><a href="https://twitter.com/telegram" target="_blank" data-track="Follow/Twitter" onclick="trackDlClick(this, event)">Twitter</a></h5>
+    </div>
+  </div>
+</div>
+    <script src="js/main02e7.js?27"></script>
+    
+    
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45099287-1', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');twitterCustomShareInit();
+blogSideImageInit();
+backToTopInit();
+</script>
+  </body>
+
+<!-- Mirrored from telegram.org/blog?offset=10 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Apr 2020 05:14:59 GMT -->
+</html>
+<!-- page generated in 58.51ms -->
